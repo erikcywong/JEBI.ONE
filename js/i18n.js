@@ -192,8 +192,14 @@ function getLang() {
 
 function setLang(lang) {
   localStorage.setItem('jebi-lang', lang);
-  // Reload page so applyI18n runs with full DOM and all modules loaded
-  window.location.reload();
+  applyI18n(lang);
+  // Update switcher display
+  document.querySelectorAll('.lang-current').forEach(function(el) {
+    el.textContent = lang.toUpperCase();
+  });
+  document.querySelectorAll('.lang-option').forEach(function(el) {
+    el.classList.toggle('active', el.dataset.lang === lang);
+  });
 }
 
 function translate(key, lang) {
