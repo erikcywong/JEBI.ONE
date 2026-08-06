@@ -192,14 +192,8 @@ function getLang() {
 
 function setLang(lang) {
   localStorage.setItem('jebi-lang', lang);
-  applyI18n(lang);
-  // Update switcher display
-  document.querySelectorAll('.lang-current').forEach(el => {
-    el.textContent = lang.toUpperCase();
-  });
-  document.querySelectorAll('.lang-option').forEach(el => {
-    el.classList.toggle('active', el.dataset.lang === lang);
-  });
+  // Reload page so applyI18n runs with full DOM and all modules loaded
+  window.location.reload();
 }
 
 function translate(key, lang) {
@@ -241,34 +235,49 @@ function applyI18n(lang) {
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
-  // 5. Dictionary-based text replacement for elements without data-i18n
-  // Build a reverse map: for each Chinese text, find if it matches a key
+  // 5. Dictionary-based text replacement — matches text containing Chinese keys
   if (lang !== 'zh') {
-    const textMap = {};
-    for (const [key, vals] of Object.entries(I18N)) {
-      if (vals.zh && vals[lang]) {
-        textMap[vals.zh] = vals[lang];
+    var textMap = {};
+    var chineseKeys = [];
+    for (var key in I18N) {
+      if (I18N.hasOwnProperty(key)) {
+        var vals = I18N[key];
+        if (vals.zh && vals[lang]) {
+          textMap[vals.zh] = vals[lang];
+          chineseKeys.push(vals.zh);
+        }
       }
     }
-    // Walk text nodes
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, null);
-    const nodes = [];
-    let node;
-    while (node = walker.nextNode()) {
-      const text = node.textContent.trim();
-      if (text && textMap[text]) {
-        nodes.push({ node, replacement: textMap[text] });
+    // Sort by length descending so longer matches take priority
+    chineseKeys.sort(function(a, b) { return b.length - a.length; });
+
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(n) {
+        // Skip script/style tags
+        var p = n.parentNode;
+        if (p && (p.tagName === 'SCRIPT' || p.tagName === 'STYLE')) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }, false);
+
+    var node;
+    while ((node = walker.nextNode())) {
+      var text = node.textContent.trim();
+      if (!text) continue;
+      // Find the longest matching Chinese key in this text
+      for (var i = 0; i < chineseKeys.length; i++) {
+        var zhKey = chineseKeys[i];
+        if (text.indexOf(zhKey) !== -1) {
+          var replacement = textMap[zhKey];
+          // Replace the Chinese portion while preserving surrounding text
+          node.textContent = node.textContent.replace(zhKey, replacement);
+          break; // Only replace first match per text node
+        }
       }
     }
-    nodes.forEach(({ node, replacement }) => {
-      // Preserve leading/trailing whitespace
-      const lead = node.textContent.match(/^\s*/)[0];
-      const trail = node.textContent.match(/\s*$/)[0];
-      node.textContent = lead + replacement + trail;
-    });
   } else {
     // For zh, restore from data-i18n-original if stored
-    document.querySelectorAll('[data-i18n-original]').forEach(el => {
+    document.querySelectorAll('[data-i18n-original]').forEach(function(el) {
       el.textContent = el.getAttribute('data-i18n-original');
     });
   }
@@ -306,23 +315,9 @@ function initLangSwitcher() {
       });
     });
 
-    // --- First-visit language modal (only on pages with #langModal) ---
-    var modal = document.getElementById('langModal');
-    if (modal) {
-      var visited = localStorage.getItem('jebi-visited');
-      if (!visited) {
-        // First visit — show modal
-        initLangModal(modal);
-      } else {
-        // Returning visitor — apply saved language
-        var savedLang = getLang();
-        applyI18n(savedLang);
-      }
-    } else {
-      // Subpages (no modal) — just apply language
-      var savedLang = getLang();
-      applyI18n(savedLang);
-    }
+    // --- Apply saved language (modal is handled by inline script in index.html) ---
+    var savedLang = getLang();
+    applyI18n(savedLang);
 
     // --- Update switcher display ---
     var lang = getLang();

@@ -62,27 +62,23 @@
             setTimeout(function() { m.style.display = 'none'; }, 400);
           }
 
-          // Option clicks
+          // Option clicks — set language then reload so i18n.js applies it properly
           m.querySelectorAll('.lang-modal-option').forEach(function(opt) {
             opt.addEventListener('click', function() {
               var lang = opt.dataset.lang;
               localStorage.setItem('jebi-lang', lang);
               localStorage.setItem('jebi-visited', '1');
-              // Try to apply i18n if available (from i18n.js loaded later)
-              if (window.JEBI_I18N && window.JEBI_I18N.applyI18n) {
-                window.JEBI_I18N.applyI18n(lang);
-              }
-              closeLangModal();
+              window.location.reload();
             });
           });
 
-          // Skip button
+          // Skip button — default zh then reload
           var skipBtn = document.getElementById('langModalSkip');
           if (skipBtn) {
             skipBtn.addEventListener('click', function() {
               localStorage.setItem('jebi-lang', 'zh');
               localStorage.setItem('jebi-visited', '1');
-              closeLangModal();
+              window.location.reload();
             });
           }
         } catch(e) {}
@@ -791,8 +787,8 @@
           </div>
         </div>
       </footer>
-      <script src="js/i18n.js?v=3"></script>
-      <script src="js/main.js?v=3">
+      <script src="js/i18n.js?v=4"></script>
+      <script src="js/main.js?v=4">
       </script>
     </body>
   </html>
