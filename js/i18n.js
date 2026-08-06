@@ -302,15 +302,62 @@ function initLangSwitcher() {
     });
   });
 
-  // Set initial language
+  // Check if first visit (no language preference set)
+  const hasLang = localStorage.getItem('jebi-lang');
+  if (!hasLang) {
+    // Show language selection modal on first visit
+    initLangModal();
+  } else {
+    // Apply saved language
+    const lang = getLang();
+    applyI18n(lang);
+  }
+
+  // Always update switcher display
   const lang = getLang();
-  applyI18n(lang);
   document.querySelectorAll('.lang-current').forEach(el => {
     el.textContent = lang.toUpperCase();
   });
   document.querySelectorAll('.lang-option').forEach(el => {
     el.classList.toggle('active', el.dataset.lang === lang);
   });
+}
+
+/* ---------- Language Selection Modal ---------- */
+function initLangModal() {
+  const modal = document.getElementById('langModal');
+  if (!modal) return;
+
+  // Show modal with slight delay for smooth entrance
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      modal.classList.add('active');
+    });
+  });
+
+  // Option click handlers
+  modal.querySelectorAll('.lang-modal-option').forEach(opt => {
+    opt.addEventListener('click', () => {
+      const lang = opt.dataset.lang;
+      setLang(lang);
+      closeModal(modal);
+    });
+  });
+
+  // Skip button — use default (zh) and close
+  const skipBtn = document.getElementById('langModalSkip');
+  if (skipBtn) {
+    skipBtn.addEventListener('click', () => {
+      setLang('zh');
+      closeModal(modal);
+    });
+  }
+}
+
+function closeModal(modal) {
+  modal.classList.remove('active');
+  // Remove from DOM after transition
+  setTimeout(() => { modal.style.display = 'none'; }, 400);
 }
 
 // Initialize on DOMContentLoaded
