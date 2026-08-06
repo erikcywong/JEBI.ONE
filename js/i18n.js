@@ -1,5 +1,5 @@
 /* ============================================================
-   JEBI HUB — i18n Internationalization System
+   JEBI ONE — i18n Internationalization System
    Languages: EN (English) / ZH (Mandarin) / AR (Arabic)
    ============================================================ */
 
@@ -131,7 +131,7 @@ const I18N = {
 
   /* ---------- Contact Page ---------- */
   "contact.title": { en: "Contact Us", zh: "联系我们", ar: "اتصل بنا" },
-  "contact.desc": { en: "Get in touch with the JEBI HUB team", zh: "与 JEBI HUB 团队取得联系", ar: "تواصل مع فريق JEBI HUB" },
+  "contact.desc": { en: "Get in touch with the JEBI ONE team", zh: "与 JEBI ONE 团队取得联系", ar: "تواصل مع فريق JEBI ONE" },
   "contact.whatsapp": { en: "WhatsApp", zh: "WhatsApp", ar: "واتساب" },
   "contact.wechat": { en: "WeChat", zh: "微信", ar: "وي تشات" },
   "contact.email": { en: "Email", zh: "邮箱", ar: "البريد الإلكتروني" },
@@ -141,16 +141,16 @@ const I18N = {
   "contact.faq": { en: "Frequently Asked Questions", zh: "常见问题", ar: "الأسئلة الشائعة" },
 
   /* ---------- About Page ---------- */
-  "about.title": { en: "About JEBI HUB", zh: "关于我们", ar: "من نحن" },
-  "about.desc": { en: "JEBI HUB is the world's first low-carbon coffee industry platform covering the entire chain from seed to cup, built on aeroponic hydroponic technology.", zh: "JEBI HUB 是全球首个覆盖"从种子到杯子"全链条的咖啡低碳产业互联网平台，以雾化水培技术为起点。", ar: "JEBI HUB هي أول منصة صناعة قهوة منخفضة الكربون في العالم تغطي السلسلة الكاملة من البذرة إلى الفنجان، مبنية على تقنية الزراعة الهوائية." },
+  "about.title": { en: "About JEBI ONE", zh: "关于我们", ar: "من نحن" },
+  "about.desc": { en: "JEBI ONE is the world's first low-carbon coffee industry platform covering the entire chain from seed to cup, built on aeroponic hydroponic technology.", zh: "JEBI ONE 是全球首个覆盖"从种子到杯子"全链条的咖啡低碳产业互联网平台，以雾化水培技术为起点。", ar: "JEBI ONE هي أول منصة صناعة قهوة منخفضة الكربون في العالم تغطي السلسلة الكاملة من البذرة إلى الفنجان، مبنية على تقنية الزراعة الهوائية." },
 
   /* ---------- Methodology Page ---------- */
   "methodology.title": { en: "Carbon Accounting Methodology", zh: "碳核算方法论", ar: "منهجية حساب الكربون" },
-  "methodology.desc": { en: "How JEBI HUB measures, verifies, and offsets carbon across the entire coffee supply chain", zh: "JEBI HUB 如何在整个咖啡供应链中计量、验证和抵消碳排放", ar: "كيف تقيس JEBI HUB وتتحقق وتعوض الكربون عبر سلسلة توريد القهوة بأكملها" },
+  "methodology.desc": { en: "How JEBI ONE measures, verifies, and offsets carbon across the entire coffee supply chain", zh: "JEBI ONE 如何在整个咖啡供应链中计量、验证和抵消碳排放", ar: "كيف تقيس JEBI ONE وتتحقق وتعوض الكربون عبر سلسلة توريد القهوة بأكملها" },
 
   /* ---------- Join Platform Page ---------- */
   "join.title": { en: "Join the Platform", zh: "加入平台", ar: "انضم للمنصة" },
-  "join.desc": { en: "Whether you're a grower, roaster, trader, or consumer — there's a role for you in the JEBI HUB ecosystem", zh: "无论您是种植户、烘焙师、贸易商还是消费者——JEBI HUB 生态中都有您的角色", ar: "سواء كنت مزارعاً أو محمصاً أو تاجراً أو مستهلكاً — هناك دور لك في نظام JEBI HUB البيئي" },
+  "join.desc": { en: "Whether you're a grower, roaster, trader, or consumer — there's a role for you in the JEBI ONE ecosystem", zh: "无论您是种植户、烘焙师、贸易商还是消费者——JEBI ONE 生态中都有您的角色", ar: "سواء كنت مزارعاً أو محمصاً أو تاجراً أو مستهلكاً — هناك دور لك في نظام JEBI ONE البيئي" },
 
   /* ---------- B2B Page ---------- */
   "b2b.title": { en: "B2B Dynamic Pricing Platform", zh: "B2B 动态定价平台", ar: "منصة التسعير الديناميكي بين الشركات" },
