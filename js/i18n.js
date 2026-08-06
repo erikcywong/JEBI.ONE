@@ -280,74 +280,91 @@ function applyI18n(lang) {
 }
 
 function initLangSwitcher() {
-  const switchers = document.querySelectorAll('.lang-switcher');
-  switchers.forEach(switcher => {
-    const btn = switcher.querySelector('.lang-switcher-btn');
-    if (btn) {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        switcher.classList.toggle('open');
-      });
-    }
-    document.addEventListener('click', () => {
-      switcher.classList.remove('open');
-    });
-    switcher.querySelectorAll('.lang-option').forEach(opt => {
-      opt.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const lang = opt.dataset.lang;
-        setLang(lang);
+  try {
+    // --- Language switcher dropdown ---
+    document.querySelectorAll('.lang-switcher').forEach(switcher => {
+      const btn = switcher.querySelector('.lang-switcher-btn');
+      if (btn) {
+        btn.setAttribute('type', 'button');
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          switcher.classList.toggle('open');
+        });
+      }
+      // Close when clicking outside
+      document.addEventListener('click', function() {
         switcher.classList.remove('open');
       });
+      // Option clicks
+      switcher.querySelectorAll('.lang-option').forEach(function(opt) {
+        opt.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var lang = opt.dataset.lang;
+          setLang(lang);
+          switcher.classList.remove('open');
+        });
+      });
     });
-  });
 
-  // Check if first visit (no language preference set)
-  const hasLang = localStorage.getItem('jebi-lang');
-  if (!hasLang) {
-    // Show language selection modal on first visit
-    initLangModal();
-  } else {
-    // Apply saved language
-    const lang = getLang();
-    applyI18n(lang);
+    // --- First-visit language modal (only on pages with #langModal) ---
+    var modal = document.getElementById('langModal');
+    if (modal) {
+      var visited = localStorage.getItem('jebi-visited');
+      if (!visited) {
+        // First visit — show modal
+        initLangModal(modal);
+      } else {
+        // Returning visitor — apply saved language
+        var savedLang = getLang();
+        applyI18n(savedLang);
+      }
+    } else {
+      // Subpages (no modal) — just apply language
+      var savedLang = getLang();
+      applyI18n(savedLang);
+    }
+
+    // --- Update switcher display ---
+    var lang = getLang();
+    document.querySelectorAll('.lang-current').forEach(function(el) {
+      el.textContent = lang.toUpperCase();
+    });
+    document.querySelectorAll('.lang-option').forEach(function(el) {
+      el.classList.toggle('active', el.dataset.lang === lang);
+    });
+  } catch(err) {
+    console.error('[JEBI i18n] initLangSwitcher error:', err);
   }
-
-  // Always update switcher display
-  const lang = getLang();
-  document.querySelectorAll('.lang-current').forEach(el => {
-    el.textContent = lang.toUpperCase();
-  });
-  document.querySelectorAll('.lang-option').forEach(el => {
-    el.classList.toggle('active', el.dataset.lang === lang);
-  });
 }
 
 /* ---------- Language Selection Modal ---------- */
-function initLangModal() {
-  const modal = document.getElementById('langModal');
+function initLangModal(modal) {
   if (!modal) return;
 
-  // Show modal with slight delay for smooth entrance
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      modal.classList.add('active');
+  // If not already shown by inline script, show now
+  if (!modal.classList.contains('active')) {
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        modal.classList.add('active');
+      });
     });
-  });
+  }
 
-  // Option click handlers
-  modal.querySelectorAll('.lang-modal-option').forEach(opt => {
-    opt.addEventListener('click', () => {
-      const lang = opt.dataset.lang;
+  // Option click handlers (always attach, even if already visible)
+  modal.querySelectorAll('.lang-modal-option').forEach(function(opt) {
+    opt.setAttribute('type', 'button');
+    opt.addEventListener('click', function() {
+      var lang = opt.dataset.lang;
       setLang(lang);
       closeModal(modal);
     });
   });
 
-  // Skip button — use default (zh) and close
-  const skipBtn = document.getElementById('langModalSkip');
+  // Skip button
+  var skipBtn = document.getElementById('langModalSkip');
   if (skipBtn) {
-    skipBtn.addEventListener('click', () => {
+    skipBtn.setAttribute('type', 'button');
+    skipBtn.addEventListener('click', function() {
       setLang('zh');
       closeModal(modal);
     });
@@ -356,14 +373,21 @@ function initLangModal() {
 
 function closeModal(modal) {
   modal.classList.remove('active');
-  // Remove from DOM after transition
-  setTimeout(() => { modal.style.display = 'none'; }, 400);
+  localStorage.setItem('jebi-visited', '1');
+  setTimeout(function() { modal.style.display = 'none'; }, 400);
 }
 
-// Initialize on DOMContentLoaded
-document.addEventListener('DOMContentLoaded', () => {
+// --- Boot: run immediately if DOM is ready, otherwise wait ---
+function boot() {
   initLangSwitcher();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', boot);
+} else {
+  // DOM already parsed (script at bottom of body)
+  boot();
+}
 
 // Export for manual use
-window.JEBI_I18N = { getLang, setLang, applyI18n, initLangSwitcher };
+window.JEBI_I18N = { getLang: getLang, setLang: setLang, applyI18n: applyI18n, initLangSwitcher: initLangSwitcher };
