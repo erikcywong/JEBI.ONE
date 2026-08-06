@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>低碳咖啡加工 — JEBI HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+          <span>JEBI HUB</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+          <a href="../index.html#modules" class="nav-link" data-i18n="nav.modules">模块</a>
+          <a href="../index.html#dashboard" class="nav-link" data-i18n="nav.carbon_data">碳数据</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="lang-current">ZH</span>
+            </button>
+            <div class="lang-switcher-menu">
+              <div class="lang-option active" data-lang="zh">中文</div>
+              <div class="lang-option" data-lang="en">English</div>
+              <div class="lang-option" data-lang="ar">العربية</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="page-header" style="--ph-glow: rgba(29, 155, 240, 0.08);">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">首页</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>低碳加工</span>
+        </div>
+        <div class="page-header-content">
+          <div class="module-icon" style="background: var(--accent-dim);">
+          </div>
+          <h1>低碳咖啡加工协同平台</h1>
+          <p class="module-desc">连接全球咖啡加工厂，提供生豆处理、脱壳、分级、检测一站式协同服务。接入设备能耗数据，实时计算单位产品碳排放，推荐低碳加工技术。</p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="kpi" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="86">86</div>
+          <div class="kpi-label">入驻加工厂</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--accent);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="42" data-suffix="%">42%</div>
+          <div class="kpi-label">平均节能率</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--amber);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="3040">3,040</div>
+          <div class="kpi-label">年碳减排 (tCO₂e)</div>
+        </div>
+      </div>
+    </section>
+    <!-- Energy Comparison Chart -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">设备碳排对比</div>
+            <h2>燃气烘焙 vs 全电动烘焙</h2>
+          </div>
+        </div>
+        <div class="dash-panel">
+          <div class="panel animate-in d1">
+            <div class="panel-head">
+              <span class="panel-title">单位能耗碳排放 (kgCO₂e/kg生豆)</span>
+              <span class="panel-badge live">对比</span>
+            </div>
+            <div class="hbar-list">
+              <div class="hbar-row">
+                <span class="hbar-label">传统燃气</span>
+                <div class="hbar-track">
+                  <div class="hbar-fill" style="width: 100%; background: linear-gradient(90deg, #c0392b, var(--red));">2.45</div>
+                </div>
+                <span class="hbar-val" style="color: var(--red);">2.45</span>
+              </div>
+              <div class="hbar-row">
+                <span class="hbar-label">混合动力</span>
+                <div class="hbar-track">
+                  <div class="hbar-fill amber" style="width: 55%;">1.35</div>
+                </div>
+                <span class="hbar-val" style="color: var(--amber);">1.35</span>
+              </div>
+              <div class="hbar-row">
+                <span class="hbar-label">全电动</span>
+                <div class="hbar-track">
+                  <div class="hbar-fill green" style="width: 20%;">0.49</div>
+                </div>
+                <span class="hbar-val" style="color: var(--green);">0.49</span>
+              </div>
+              <div class="hbar-row">
+                <span class="hbar-label">太阳能+电动</span>
+                <div class="hbar-track">
+                  <div class="hbar-fill green" style="width: 8%;">0.19</div>
+                </div>
+                <span class="hbar-val" style="color: var(--green);">0.19</span>
+              </div>
+            </div>
+            <div style="margin-top: 16px; font-size: 0.8rem; color: var(--green);">↓ 全电动较燃气减少碳排放 80%+</div>
+          </div>
+          <div class="dash-panel-right">
+            <div class="panel animate-in d2">
+              <div class="panel-head">
+                <span class="panel-title">废弃物资源化率</span>
+              </div>
+              <div class="donut-wrap">
+                <div class="donut">
+                  <svg width="140" height="140" viewBox="0 0 140 140">
+                    <circle cx="70" cy="70" r="58" fill="none" stroke="var(--bg-1)" stroke-width="12"/>
+                    <circle cx="70" cy="70" r="58" fill="none" stroke="var(--green)" stroke-width="12" stroke-dasharray="364.4" stroke-dashoffset="54.7" stroke-linecap="round"/>
+                  </svg>
+                  <div class="donut-center">
+                    <div class="donut-val" style="color: var(--green);">85%</div>
+                    <div class="donut-label">资源化</div>
+                  </div>
+                </div>
+                <div class="donut-legend">
+                  <div class="donut-legend-item">
+                    <span class="donut-legend-dot" style="background: var(--green);">
+                    </span>
+                    <span>果皮→有机肥</span>
+                  </div>
+                  <div class="donut-legend-item">
+                    <span class="donut-legend-dot" style="background: var(--accent);">
+                    </span>
+                    <span>果胶→生物质</span>
+                  </div>
+                  <div class="donut-legend-item">
+                    <span class="donut-legend-dot" style="background: var(--amber);">
+                    </span>
+                    <span>银皮→饲料</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">核心功能</div>
+            <h2>六大能力</h2>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card animate-in d1">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>加工厂资源对接</h4>
+            <p>全球加工厂名录，按处理法、产能、认证筛选，在线预约加工产能。</p>
+          </div>
+          <div class="feature-card animate-in d2">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>工艺数字化管理</h4>
+            <p>加工工艺参数数字化记录与优化建议，批次全流程追踪与质量报告。</p>
+          </div>
+          <div class="feature-card animate-in d3">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>能耗与碳排核算</h4>
+            <p>接入设备能耗数据，实时计算每公斤生豆碳排放，对标行业基准。</p>
+          </div>
+          <div class="feature-card animate-in d4">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>产能共享与协同</h4>
+            <p>加工淡旺季产能调配、订单协同管理，提高设备利用率降低单位碳排。</p>
+          </div>
+          <div class="feature-card animate-in d5">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>废弃物资源化</h4>
+            <p>咖啡果皮、咖啡渣等副产物资源化利用对接，变废为宝零废弃。</p>
+          </div>
+          <div class="feature-card animate-in d6">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>品质检测分级</h4>
+            <p>SCA标准杯测、生豆分级、含水率检测，第三方检测报告在线查询。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="lc-banner">
+          <h3> 低碳加工技术推荐</h3>
+          <p>全电动烘焙机较传统燃气烘焙可减少80%以上碳排放。平台优先推荐已通过低碳认证的加工设备和工艺。</p>
+          <ul>
+            <li>全电动干燥与脱壳设备推荐</li>
+            <li>加工余热回收系统对接</li>
+            <li>水循环处理系统（节水70%+）</li>
+            <li>低碳加工认证与碳积分奖励</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>加工厂名录</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>工厂名称</th>
+                <th>地点</th>
+                <th>处理法</th>
+                <th>年产能 (吨)</th>
+                <th>能耗评级</th>
+                <th>碳标签</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>云南普洱绿能加工中心</td>
+                <td>中国云南</td>
+                <td>水洗/日晒/蜜处理</td>
+                <td class="hl">2,500</td>
+                <td>
+                  <span class="pill green">AA</span>
+                </td>
+                <td>
+                  <span class="pill green">低碳认证</span>
+                </td>
+              </tr>
+              <tr>
+                <td>巴西塞拉多电动处理厂</td>
+                <td>巴西</td>
+                <td>日晒/半日晒</td>
+                <td class="hl">5,000</td>
+                <td>
+                  <span class="pill green">A</span>
+                </td>
+                <td>
+                  <span class="pill green">低碳认证</span>
+                </td>
+              </tr>
+              <tr>
+                <td>哥伦比亚慧兰加工站</td>
+                <td>哥伦比亚</td>
+                <td>水洗/厌氧发酵</td>
+                <td class="hl">1,800</td>
+                <td>
+                  <span class="pill green">A</span>
+                </td>
+                <td>
+                  <span class="pill green">低碳认证</span>
+                </td>
+              </tr>
+              <tr>
+                <td>埃塞俄比亚耶加雪菲站</td>
+                <td>埃塞俄比亚</td>
+                <td>水洗</td>
+                <td class="hl">900</td>
+                <td>
+                  <span class="pill amber">B</span>
+                </td>
+                <td>
+                  <span class="pill amber">审核中</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; justify-content: center;">
+          <p>&copy; 2026 JEBI HUB. 每一杯咖啡都有碳账本。</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js">
+    </script>
+  </body>
+</html>

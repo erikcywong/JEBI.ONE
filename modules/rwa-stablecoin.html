@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWA 与稳定币平台 — JEBI HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ========== Navigation ========== -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+          <span>JEBI HUB</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger">
+              产业链
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="planting.html" class="nav-dropdown-item"> 种植链 <span class="badge">零土壤</span>
+              </a>
+              <a href="processing.html" class="nav-dropdown-item"> 低碳加工</a>
+              <a href="trade.html" class="nav-dropdown-item"> 数字贸易</a>
+              <a href="roasting.html" class="nav-dropdown-item"> 烘焙空间</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger">
+              碳经济
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="ip-trading.html" class="nav-dropdown-item"> IP交易中心</a>
+              <a href="coffee-bank.html" class="nav-dropdown-item"> 咖啡银行</a>
+              <a href="crowdfunding.html" class="nav-dropdown-item"> 低碳众筹</a>
+              <a href="cafe.html" class="nav-dropdown-item"> 咖啡馆</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger" style="color: var(--accent); background: var(--accent-dim);">
+              私人央行
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="b2b-pricing.html" class="nav-dropdown-item"> B2B动态定价 <span class="badge">骨架</span>
+              </a>
+              <a href="rwa-stablecoin.html" class="nav-dropdown-item"> RWA与稳定币 <span class="badge">王冠</span>
+              </a>
+            </div>
+          </div>
+          <a href="../index.html#dashboard" class="nav-link" data-i18n="nav.carbon_data">碳数据</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="lang-current">ZH</span>
+            </button>
+            <div class="lang-switcher-menu">
+              <div class="lang-option active" data-lang="zh">中文</div>
+              <div class="lang-option" data-lang="en">English</div>
+              <div class="lang-option" data-lang="ar">العربية</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== Page Header ========== -->
+    <section class="page-header" style="--ph-glow: rgba(179, 136, 255, 0.10);">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">首页</a>
+          <span class="breadcrumb-sep">/</span>
+          <a href="../index.html#modules">私人央行</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>RWA 与稳定币</span>
+        </div>
+        <div class="page-header-content">
+          <div class="module-icon" style="background: var(--purple-dim);">
+          </div>
+          <h1>RWA 与稳定币平台 <span class="gradient-text">数据与金融的王冠</span>
+          </h1>
+          <p class="module-desc">
+            将实体咖啡产能资产化、代币化。每一枚咖啡豆仓单通证（CT）严格锚定 1 公斤经审计的水培咖啡豆，
+            可随时赎回实物。在合规持牌框架下，构建 CT/USDC 流动性池，并探索锚定美元的咖啡稳定币（JEBI）。
+            合规先行，稳健推进。
+          </p>
+          <div class="hero-cta" style="margin-top: 32px;">
+            <a href="#architecture" class="btn btn-primary btn-lg">查看三层架构</a>
+            <a href="#jebi" class="btn btn-outline btn-lg">JEBI 稳定币</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== KPI Row ========== -->
+    <section class="container">
+      <div class="kpi-row">
+        <div class="kpi animate-in d1" style="--kpi-color: var(--purple);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="3280000">3,280,000</div>
+          <div class="kpi-label">CT 通证发行量 (枚)</div>
+          <div class="kpi-trend up">1 CT = 1 kg 咖啡豆</div>
+        </div>
+        <div class="kpi animate-in d2" style="--kpi-color: var(--accent);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="18400000" data-prefix="$" data-suffix="">$18,400,000</div>
+          <div class="kpi-label">CT/USDC 池 TVL</div>
+          <div class="kpi-trend up">↑ 做市深度持续注入</div>
+        </div>
+        <div class="kpi animate-in d3" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="6200000" data-prefix="$" data-suffix="">$6,200,000</div>
+          <div class="kpi-label">JEBI 市值</div>
+          <div class="kpi-trend neutral">超额抵押率 142%</div>
+        </div>
+        <div class="kpi animate-in d4" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="98">98%</div>
+          <div class="kpi-label">实物赎回完成率</div>
+          <div class="kpi-trend up">T+3 全链路交付</div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== 3-Tier Architecture ========== -->
+    <section class="section" id="architecture">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">王冠结构</div>
+            <h2>三层资产架构</h2>
+          </div>
+          <p class="sub">仓单通证 → 流动性池 → 稳定币 · 自下而上价值叠加</p>
+        </div>
+        <div class="arch-stack">
+          <!-- Tier 1: CT Token -->
+          <div class="arch-tier animate-in d1" style="border-color: rgba(179,136,255,0.2); background: linear-gradient(135deg, var(--purple-dim), transparent);">
+            <span class="arch-tier-num">01</span>
+            <div class="arch-tier-label" style="color: var(--purple);">第一层 · 实物锚定</div>
+            <h3>咖啡豆仓单通证 CT</h3>
+            <p>每一枚 CT 严格锚定 1 公斤标准水培咖啡豆。仓库中每公斤豆均有对应、经审计的电子仓单，仓单信息与 Dashboard 实时同步。用户可用 USDC 或法币购买 CT，并随时赎回实物。</p>
+            <div class="arch-tier-meta">
+              <span>锚定 · 1 kg 咖啡豆</span>
+              <span>审计 · 第三方仓单</span>
+              <span>链上 · 全程溯源</span>
+            </div>
+          </div>
+          <div class="arch-connector">
+          </div>
+          <!-- Tier 2: Liquidity Pool -->
+          <div class="arch-tier animate-in d2" style="border-color: rgba(29,155,240,0.2); background: linear-gradient(135deg, var(--accent-dim), transparent);">
+            <span class="arch-tier-num">02</span>
+            <div class="arch-tier-label" style="color: var(--accent);">第二层 · 流动性引擎</div>
+            <h3>CT/USDC 流动性池</h3>
+            <p>在流动性好、生态成熟的公链上部署 DEX 流动性池。平台作为主要做市商，前期注入深度。下游采购商可直接链上购买 CT 或远期 YT，平台赚取交易手续费与套利收益。</p>
+            <div class="arch-tier-meta">
+              <span>公链 · Ethereum / Solana</span>
+              <span>做市 · 平台主导</span>
+              <span>收益 · 手续费 + 套利</span>
+            </div>
+          </div>
+          <div class="arch-connector">
+          </div>
+          <!-- Tier 3: JEBI Stablecoin -->
+          <div class="arch-tier animate-in d3" style="border-color: rgba(0,230,118,0.2); background: linear-gradient(135deg, var(--green-dim), transparent);">
+            <span class="arch-tier-num">03</span>
+            <div class="arch-tier-label" style="color: var(--green);">第三层 · 价值尺度</div>
+            <h3>水培咖啡稳定币 JEBI</h3>
+            <p>锚定 1 美元，储备由超额抵押的 CT 与信誉良好的实体资产构成。智能合约通过严格审计。远期目标——让 JEBI 成为咖啡行业"硬通货"，降低贸易结算成本。</p>
+            <div class="arch-tier-meta">
+              <span>锚定 · 1 USD</span>
+              <span>储备 · CT 超额抵押</span>
+              <span>合规 · 监管先行</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== CT Token Dashboard ========== -->
+    <section class="section" id="ct-token">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">通证仪表盘</div>
+            <h2>CT 通证数据</h2>
+          </div>
+          <span class="panel-badge live">LIVE</span>
+        </div>
+        <div class="token-stat-grid">
+          <div class="token-stat animate-in d1">
+            <div class="token-stat-label">已发行 CT</div>
+            <div class="token-stat-val" style="color: var(--purple);">3,280,000</div>
+            <div class="token-stat-sub">↗ 持续铸造中</div>
+          </div>
+          <div class="token-stat animate-in d2">
+            <div class="token-stat-label">流通中 CT</div>
+            <div class="token-stat-val" style="color: var(--accent);">2,910,000</div>
+            <div class="token-stat-sub">88.7% 流通率</div>
+          </div>
+          <div class="token-stat animate-in d3">
+            <div class="token-stat-label">锚定库存 (kg)</div>
+            <div class="token-stat-val" style="color: var(--green);">3,280,000</div>
+            <div class="token-stat-sub">100% 实物背书</div>
+          </div>
+          <div class="token-stat animate-in d4">
+            <div class="token-stat-label">已赎回实物 (kg)</div>
+            <div class="token-stat-val" style="color: var(--amber);">370,000</div>
+            <div class="token-stat-sub">赎回完成率 98%</div>
+          </div>
+        </div>
+        <div style="margin-top: 14px;" class="dash-panel">
+          <!-- Left: CT price area chart -->
+          <div class="panel animate-in d1">
+            <div class="panel-head">
+              <span class="panel-title">CT 通证价格走势 (USDC)</span>
+              <span class="panel-badge live">LIVE</span>
+            </div>
+            <svg class="area-chart" viewBox="0 0 600 280" preserveAspectRatio="none">
+              <g class="grid">
+                <line x1="40" y1="40" x2="580" y2="40"/>
+                <line x1="40" y1="100" x2="580" y2="100"/>
+                <line x1="40" y1="160" x2="580" y2="160"/>
+                <line x1="40" y1="220" x2="580" y2="220"/>
+              </g>
+              <g class="axis">
+                <text x="8" y="44">5.6</text>
+                <text x="8" y="104">5.2</text>
+                <text x="8" y="164">4.8</text>
+                <text x="8" y="224">4.4</text>
+              </g>
+              <g class="axis">
+                <text x="40" y="245">1月</text>
+                <text x="130" y="245">2月</text>
+                <text x="220" y="245">3月</text>
+                <text x="310" y="245">4月</text>
+                <text x="400" y="245">5月</text>
+                <text x="490" y="245">6月</text>
+                <text x="560" y="245">7月</text>
+              </g>
+              <path class="area-fill" fill="url(#grad-purple)" d="M 40 190 L 100 175 L 160 160 L 220 140 L 280 120 L 340 95 L 400 80 L 460 65 L 520 55 L 560 48 L 560 220 L 40 220 Z"/>
+              <path class="line-stroke" stroke="url(#grad-line-ct)" data-animate-path d="M 40 190 L 100 175 L 160 160 L 220 140 L 280 120 L 340 95 L 400 80 L 460 65 L 520 55 L 560 48"/>
+              <g fill="var(--purple)" stroke="var(--bg-0)" stroke-width="2">
+                <circle cx="40" cy="190" r="4"/>
+                <circle cx="160" cy="160" r="4"/>
+                <circle cx="280" cy="120" r="4"/>
+                <circle cx="400" cy="80" r="4"/>
+                <circle cx="520" cy="55" r="4"/>
+                <circle cx="560" cy="48" r="5" fill="#d1a3ff"/>
+              </g>
+              <text x="560" y="38" text-anchor="end" fill="#d1a3ff" font-size="11" font-family="var(--font-mono)" font-weight="700">$5.52</text>
+              <defs>
+                <linearGradient id="grad-purple" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#b388ff" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="#b388ff" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="grad-line-ct" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#7c4dff"/>
+                  <stop offset="100%" stop-color="#d1a3ff"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <!-- Right: backed inventory donut -->
+          <div class="dash-panel-right">
+            <div class="panel animate-in d2">
+              <div class="panel-head">
+                <span class="panel-title">锚定库存分布</span>
+              </div>
+              <div class="donut-wrap">
+                <div class="donut">
+                  <svg width="150" height="150" viewBox="0 0 150 150">
+                    <circle cx="75" cy="75" r="62" fill="none" stroke="var(--bg-1)" stroke-width="14"/>
+                    <circle cx="75" cy="75" r="62" fill="none" stroke="var(--purple)" stroke-width="14"
+                    stroke-dasharray="389.6" stroke-dashoffset="58.4" stroke-linecap="round"/>
+                  </svg>
+                  <div class="donut-center">
+                    <div class="donut-val" style="color: var(--purple);">85%</div>
+                    <div class="donut-label">实物背书</div>
+                  </div>
+                </div>
+                <div class="donut-legend">
+                  <div class="donut-legend-item">
+                    <span class="donut-legend-dot" style="background: var(--purple);">
+                    </span>
+                    <span>已锚定 3,280 t</span>
+                  </div>
+                  <div class="donut-legend-item">
+                    <span class="donut-legend-dot" style="background: var(--text-4);">
+                    </span>
+                    <span>可铸造余量 580 t</span>
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.75rem; color: var(--purple);">第三方审计 · 实时同步</div>
+                </div>
+              </div>
+            </div>
+            <div class="panel animate-in d3" style="flex: 1;">
+              <div class="panel-head">
+                <span class="panel-title">通证用途</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;"> 贸易结算</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--accent);">62%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;"> JEBI 抵押</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--green);">24%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;"> 实物赎回</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--amber);">11%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 10px 0;">
+                  <span style="font-size: 0.85rem;"> 持有投资</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--text-1);">3%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== CT/USDC Liquidity Pool ========== -->
+    <section class="section" id="pool">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">流动性引擎</div>
+            <h2>CT/USDC 流动性池</h2>
+          </div>
+          <p class="sub">平台做市 · 深度注入 · 手续费 + 套利收益</p>
+        </div>
+        <div class="grid-2">
+          <!-- Left: pool depth viz -->
+          <div class="panel animate-in d1">
+            <div class="panel-head">
+              <span class="panel-title">池子深度分布</span>
+              <span class="panel-badge live">LIVE</span>
+            </div>
+            <div class="pool-depth">
+              <div class="pool-bar" style="height: 30%; background: var(--accent-lo);">
+              </div>
+              <div class="pool-bar" style="height: 45%; background: var(--accent);">
+              </div>
+              <div class="pool-bar" style="height: 62%; background: var(--accent);">
+              </div>
+              <div class="pool-bar" style="height: 80%; background: var(--accent-hi);">
+              </div>
+              <div class="pool-bar" style="height: 100%; background: var(--accent-hi);">
+              </div>
+              <div class="pool-bar" style="height: 92%; background: var(--accent-hi);">
+              </div>
+              <div class="pool-bar" style="height: 75%; background: var(--accent);">
+              </div>
+              <div class="pool-bar" style="height: 58%; background: var(--accent);">
+              </div>
+              <div class="pool-bar" style="height: 40%; background: var(--accent-lo);">
+              </div>
+              <div class="pool-bar" style="height: 28%; background: var(--accent-lo);">
+              </div>
+            </div>
+            <div class="pool-axis">
+              <span>$4.40</span>
+              <span>$4.80</span>
+              <span>$5.20</span>
+              <span>$5.52</span>
+              <span>$5.80</span>
+              <span>$6.20</span>
+            </div>
+            <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-3);">池中 CT</div>
+                <div class="mono" style="font-size: 1.1rem; font-weight: 800; color: var(--purple);">2,840,000</div>
+              </div>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-3);">池中 USDC</div>
+                <div class="mono" style="font-size: 1.1rem; font-weight: 800; color: var(--accent);">$15.6M</div>
+              </div>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-3);">24h 交易量</div>
+                <div class="mono" style="font-size: 1.1rem; font-weight: 800; color: var(--green);">$820K</div>
+              </div>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-3);">做市手续费</div>
+                <div class="mono" style="font-size: 1.1rem; font-weight: 800; color: var(--amber);">0.30%</div>
+              </div>
+            </div>
+          </div>
+          <!-- Right: market maker role -->
+          <div class="panel animate-in d2">
+            <div class="panel-head">
+              <span class="panel-title">平台做市角色</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 18px;">
+              <div style="padding: 18px; background: var(--bg-1); border-radius: var(--r-md); border: 1px solid var(--border-1);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                  <span style="font-size: 1.3rem;">
+                  </span>
+                  <h4 style="font-size: 0.95rem;">前期深度注入</h4>
+                </div>
+                <p style="font-size: 0.82rem; color: var(--text-2);">平台作为主要做市商，前期注入充足流动性，确保大额采购滑点可控。</p>
+              </div>
+              <div style="padding: 18px; background: var(--bg-1); border-radius: var(--r-md); border: 1px solid var(--border-1);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                  <span style="font-size: 1.3rem;">
+                  </span>
+                  <h4 style="font-size: 0.95rem;">手续费收益</h4>
+                </div>
+                <p style="font-size: 0.82rem; color: var(--text-2);">每笔链上交易收取 0.30% 手续费，按流动性提供比例分配。</p>
+              </div>
+              <div style="padding: 18px; background: var(--bg-1); border-radius: var(--r-md); border: 1px solid var(--border-1);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                  <span style="font-size: 1.3rem;">
+                  </span>
+                  <h4 style="font-size: 0.95rem;">套利收益</h4>
+                </div>
+                <p style="font-size: 0.82rem; color: var(--text-2);">利用现货渠道进行点价与基差套利，池内外价差即时收敛。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lc-banner" style="margin-top: 14px;">
+          <h3> 下游采购商链上直采</h3>
+          <p>采购商可直接在 DEX 上购买 CT 或远期 YT（远期收益通证），无需复杂的中介流程。结算成本远低于传统跨境贸易，且全程链上可审计。</p>
+          <ul>
+            <li>链上即时结算</li>
+            <li>远期 YT 锁价</li>
+            <li>滑点可控</li>
+            <li>全程溯源</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ========== JEBI Stablecoin ========== -->
+    <section class="section" id="jebi">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">价值尺度</div>
+            <h2>JEBI 水培咖啡稳定币</h2>
+          </div>
+          <p class="sub">锚定 1 USD · CT 超额抵押 · 监管先行</p>
+        </div>
+        <div class="dash-panel">
+          <!-- Left: peg + market data -->
+          <div class="panel animate-in d1">
+            <div class="panel-head">
+              <span class="panel-title">JEBI 锚定状态</span>
+              <span class="panel-badge live">LIVE</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 24px;">
+              <div class="peg-indicator stable">
+                <span class="peg-dot">
+                </span>1 JEBI = $1.002</div>
+                <span style="font-size: 0.78rem; color: var(--text-3);">偏离 +0.2% · 稳定区间</span>
+              </div>
+              <svg class="area-chart" viewBox="0 0 600 200" preserveAspectRatio="none" style="height: 160px;">
+                <g class="grid">
+                  <line x1="40" y1="30" x2="580" y2="30" stroke="rgba(0,230,118,0.1)" stroke-dasharray="4 4"/>
+                  <line x1="40" y1="100" x2="580" y2="100" stroke="var(--border-2)"/>
+                  <line x1="40" y1="170" x2="580" y2="170" stroke="rgba(255,82,82,0.1)" stroke-dasharray="4 4"/>
+                </g>
+                <g class="axis">
+                  <text x="8" y="34">$1.02</text>
+                  <text x="8" y="104">$1.00</text>
+                  <text x="8" y="174">$0.98</text>
+                </g>
+                <path class="area-fill" fill="url(#grad-jebi)" d="M 40 102 L 100 100 L 160 98 L 220 101 L 280 99 L 340 100 L 400 98 L 460 101 L 520 99 L 560 100 L 560 170 L 40 170 Z"/>
+                <path class="line-stroke" stroke="var(--green)" data-animate-path d="M 40 102 L 100 100 L 160 98 L 220 101 L 280 99 L 340 100 L 400 98 L 460 101 L 520 99 L 560 100"/>
+                <defs>
+                  <linearGradient id="grad-jebi" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#00e676" stop-opacity="0.2"/>
+                    <stop offset="100%" stop-color="#00e676" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div style="display: flex; gap: 24px; margin-top: 20px;">
+                <div>
+                  <div style="font-size: 0.72rem; color: var(--text-3);">流通市值</div>
+                  <div class="mono" style="font-size: 1.3rem; font-weight: 800; color: var(--green);">$6.2M</div>
+                </div>
+                <div>
+                  <div style="font-size: 0.72rem; color: var(--text-3);">超额抵押率</div>
+                  <div class="mono" style="font-size: 1.3rem; font-weight: 800; color: var(--green);">142%</div>
+                </div>
+                <div>
+                  <div style="font-size: 0.72rem; color: var(--text-3);">智能合约审计</div>
+                  <div class="mono" style="font-size: 1.3rem; font-weight: 800; color: var(--green);">已通过</div>
+                </div>
+              </div>
+            </div>
+            <!-- Right: reserve composition -->
+            <div class="dash-panel-right">
+              <div class="panel animate-in d2" style="flex: 1;">
+                <div class="panel-head">
+                  <span class="panel-title">储备资产构成</span>
+                </div>
+                <div class="reserve-list">
+                  <div class="reserve-row">
+                    <div class="reserve-row-head">
+                      <span class="reserve-row-label"> CT 通证抵押</span>
+                      <span>
+                        <span class="reserve-row-val" style="color: var(--purple);">$4.96M</span>
+                        <span class="reserve-row-val pct">80%</span>
+                      </span>
+                    </div>
+                    <div class="reserve-track">
+                      <div class="reserve-fill" style="width: 80%; background: linear-gradient(90deg, #7c4dff, var(--purple));">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reserve-row">
+                    <div class="reserve-row-head">
+                      <span class="reserve-row-label"> 法币/USDC 储备</span>
+                      <span>
+                        <span class="reserve-row-val" style="color: var(--accent);">$0.87M</span>
+                        <span class="reserve-row-val pct">14%</span>
+                      </span>
+                    </div>
+                    <div class="reserve-track">
+                      <div class="reserve-fill" style="width: 14%; background: linear-gradient(90deg, var(--accent-lo), var(--accent));">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reserve-row">
+                    <div class="reserve-row-head">
+                      <span class="reserve-row-label"> 实物咖啡仓单</span>
+                      <span>
+                        <span class="reserve-row-val" style="color: var(--green);">$0.37M</span>
+                        <span class="reserve-row-val pct">6%</span>
+                      </span>
+                    </div>
+                    <div class="reserve-track">
+                      <div class="reserve-fill" style="width: 6%; background: linear-gradient(90deg, var(--green-lo), var(--green));">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p style="font-size: 0.74rem; color: var(--text-3); margin-top: 16px;">总储备 $6.20M · 流通 JEBI $4.37M · 超额抵押 $1.83M</p>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 14px;" class="lc-banner" style="border-color: rgba(255,183,77,0.15); background: linear-gradient(135deg, rgba(255,183,77,0.06), rgba(255,183,77,0.01));">
+            <h3 style="color: var(--amber);"> 监管敏感 · 长期战略</h3>
+            <p>发行稳定币在全球范围面临严格金融监管（美国 SEC、欧洲 MiCA 等）。JEBI 仅在完成顶尖法律顾问审查、取得必要牌照后推进。当前作为长期战略储备，不急于推进。所有智能合约须通过严格审计。</p>
+          </div>
+        </div>
+      </section>
+      <!-- ========== Redemption Flow ========== -->
+      <section class="section" id="redemption">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="section-eyebrow">实物交收</div>
+              <h2>CT 赎回流程</h2>
+            </div>
+            <p class="sub">链上通证 → 链下实物 · T+3 全链路交付</p>
+          </div>
+          <div class="panel animate-in d1">
+            <div class="stepper">
+              <div class="step-item done">
+                <div class="step-circle">01</div>
+                <div class="step-label">赎回申请</div>
+                <div class="step-desc">持有人在链上发起 CT 赎回，锁定通证</div>
+              </div>
+              <div class="step-item done">
+                <div class="step-circle">02</div>
+                <div class="step-label">仓单核验</div>
+                <div class="step-desc">系统核验对应电子仓单与审计凭证</div>
+              </div>
+              <div class="step-item active">
+                <div class="step-circle">03</div>
+                <div class="step-label">品质出库</div>
+                <div class="step-desc">仓库按标准分级出库，质检上链</div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle">04</div>
+                <div class="step-label">物流交付</div>
+                <div class="step-desc">低碳海运优先 · T+3 到达 · 通证销毁</div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 14px;" class="grid-3">
+            <div class="storage-cell animate-in d2">
+              <div class="storage-cell-head">
+                <span class="storage-cell-label">赎回请求 · 在途</span>
+                <span class="storage-cell-dot warn">
+                </span>
+              </div>
+              <div class="storage-cell-val" style="color: var(--amber);">1,240</div>
+              <div class="storage-cell-unit">CT · 等待出库</div>
+            </div>
+            <div class="storage-cell animate-in d3">
+              <div class="storage-cell-head">
+                <span class="storage-cell-label">赎回完成 · 30日</span>
+                <span class="storage-cell-dot ok">
+                </span>
+              </div>
+              <div class="storage-cell-val" style="color: var(--green);">48,200</div>
+              <div class="storage-cell-unit">CT · 完成率 98%</div>
+            </div>
+            <div class="storage-cell animate-in d4">
+              <div class="storage-cell-head">
+                <span class="storage-cell-label">平均交付时效</span>
+                <span class="storage-cell-dot ok">
+                </span>
+              </div>
+              <div class="storage-cell-val" style="color: var(--accent);">2.4<span style="font-size: 0.8rem; color: var(--text-3);"> 天</span>
+              </div>
+              <div class="storage-cell-unit">优于 T+3 承诺</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== Compliance Framework ========== -->
+      <section class="section" id="compliance">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="section-eyebrow">合规先行</div>
+              <h2>合规与司法管辖框架</h2>
+            </div>
+            <p class="sub">与持牌交易所及 RWA 协议合作 · 顶尖法律顾问前置</p>
+          </div>
+          <div class="grid-2">
+            <div class="panel animate-in d1">
+              <div class="panel-head">
+                <span class="panel-title">合作司法管辖区</span>
+              </div>
+              <div class="chip-row">
+                <span class="chip green"> 中国香港 · VATP 持牌</span>
+                <span class="chip blue"> 新加坡 · MAS 监管</span>
+                <span class="chip purple"> 瑞士 · FINMA</span>
+                <span class="chip amber"> 阿联酋 · ADGM</span>
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-2); margin-top: 18px; line-height: 1.6;">
+                仅与持牌虚拟资产交易所或合规 RWA 协议（如 Centrifuge、Ondo Finance）合作发行 CT。
+                资产确权确保仓库中每公斤咖啡豆均有对应、经审计的仓单，仓单信息与 Dashboard 实时同步。
+              </p>
+            </div>
+            <div class="panel animate-in d2">
+              <div class="panel-head">
+                <span class="panel-title">风控与审计</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;">智能合约审计</span>
+                  <span class="pill green">已通过</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;">储备金审计</span>
+                  <span class="pill green">月度披露</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;">超额抵押率</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--green);">142%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;">链上溯源覆盖</span>
+                  <span class="pill green">100%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 12px 0;">
+                  <span style="font-size: 0.85rem;">反洗钱 / KYC</span>
+                  <span class="pill blue">全量接入</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lc-banner" style="margin-top: 14px;">
+            <h3> 核心原则：先做实，再做强</h3>
+            <p>自营交易是"现金牛"，B2B 平台是"护城河"，RWA 是"王冠"。一步一个脚印，合规是生命线。所有操作严格遵循"四流合一"与商业实质原则，杜绝任何形式的融资性贸易或虚假贸易。</p>
+            <ul>
+              <li>合规先行 · 牌照为准</li>
+              <li>超额抵押 · 审计披露</li>
+              <li>闷声发大财 · 静默兑现数据价值</li>
+              <li>实体产能是信用基石</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- ========== Footer ========== -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <h3> JEBI HUB</h3>
+              <p>中国首个覆盖"从种子到杯子"全链条的咖啡低碳产业互联网平台。以雾化水培技术为起点，构建咖啡全产业链低碳生态圈。</p>
+            </div>
+            <div class="footer-col">
+              <h4>产业链</h4>
+              <a href="planting.html">雾化水培种植链</a>
+              <a href="processing.html">低碳咖啡加工</a>
+              <a href="trade.html">数字咖啡贸易</a>
+              <a href="roasting.html">烘焙共享空间</a>
+            </div>
+            <div class="footer-col">
+              <h4>私人央行</h4>
+              <a href="b2b-pricing.html">B2B 动态定价平台</a>
+              <a href="rwa-stablecoin.html">RWA 与稳定币平台</a>
+            </div>
+            <div class="footer-col">
+              <h4>关于</h4>
+              <a href="#">关于我们</a>
+              <a href="#">碳核算方法论</a>
+              <a href="#">加入平台</a>
+              <a href="#">联系我们</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2026 JEBI HUB. 每一杯咖啡都有碳账本。</p>
+            <p style="display: flex; align-items: center; gap: 4px;">
+              <span style="color: var(--green);">●</span> 平台运行状态：正常</p>
+            </div>
+          </div>
+        </footer>
+        <script src="../js/i18n.js"></script>
+    <script src="../js/main.js">
+        </script>
+      </body>
+    </html>

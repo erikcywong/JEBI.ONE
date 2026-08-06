@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEBI HUB — 从雾培种子到碳中和杯子</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ========== Navigation ========== -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span>JEBI HUB</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active" data-i18n="nav.home">首页</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger" data-i18n="nav.industry_chain_trigger">产业链
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="modules/planting.html" class="nav-dropdown-item" data-i18n="nav.planting"> 种植链 <span class="badge">零土壤</span>
+              </a>
+              <a href="modules/processing.html" class="nav-dropdown-item" data-i18n="nav.processing"> 低碳加工</a>
+              <a href="modules/trade.html" class="nav-dropdown-item" data-i18n="nav.trade"> 数字贸易</a>
+              <a href="modules/roasting.html" class="nav-dropdown-item" data-i18n="nav.roasting"> 烘焙空间</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger" data-i18n="nav.carbon_economy_trigger">碳经济
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="modules/ip-trading.html" class="nav-dropdown-item" data-i18n="nav.ip_trading"> IP交易中心</a>
+              <a href="modules/coffee-bank.html" class="nav-dropdown-item" data-i18n="nav.coffee_bank"> 咖啡银行</a>
+              <a href="modules/crowdfunding.html" class="nav-dropdown-item" data-i18n="nav.crowdfunding"> 低碳众筹</a>
+              <a href="modules/cafe.html" class="nav-dropdown-item" data-i18n="nav.cafe"> 咖啡馆</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger" style="color: var(--accent); background: var(--accent-dim);" data-i18n="nav.private_central_bank_trigger">私人央行
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="modules/b2b-pricing.html" class="nav-dropdown-item" data-i18n="nav.b2b_pricing"> B2B动态定价 <span class="badge">骨架</span>
+              </a>
+              <a href="modules/rwa-stablecoin.html" class="nav-dropdown-item" data-i18n="nav.rwa_stablecoin"> RWA与稳定币 <span class="badge">王冠</span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger" data-i18n="nav.about_trigger">
+              关于
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="modules/about.html" class="nav-dropdown-item" data-i18n="nav.about_us"> 关于我们</a>
+              <a href="modules/methodology.html" class="nav-dropdown-item" data-i18n="nav.methodology"> 碳核算方法论</a>
+              <a href="modules/join-platform.html" class="nav-dropdown-item" data-i18n="nav.join_platform"> 加入平台</a>
+              <a href="modules/contact.html" class="nav-dropdown-item" data-i18n="nav.contact"> 联系我们</a>
+            </div>
+          </div>
+          <a href="#dashboard" class="nav-link" data-i18n="nav.carbon_data">碳数据</a>
+        </div>
+          <div class="lang-switcher">
+            <button class="lang-switcher-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="lang-current">ZH</span>
+            </button>
+            <div class="lang-switcher-menu">
+              <div class="lang-option active" data-lang="zh">中文</div>
+              <div class="lang-option" data-lang="en">English</div>
+              <div class="lang-option" data-lang="ar">العربية</div>
+            </div>
+          </div>
+      </div>
+    </nav>
+    <!-- ========== Hero ========== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">
+          <span class="hero-badge-dot">
+          </span>
+          全球首创雾化水培 · 全链路碳中和 · 区块链溯源
+        </div>
+        <h1 data-i18n="hero.title_full">从雾培种子到碳中和杯子</h1>
+        <p class="hero-sub" data-i18n="hero.sub_cn">
+          中国首个覆盖"从种子到杯子"全链条的咖啡低碳产业互联网平台。
+          八大模块环环双扣，三大飞轮自我强化——每一杯咖啡都有碳账本。
+        </p>
+        <div class="hero-cta">
+          <a href="#modules" class="btn btn-primary btn-lg" data-i18n="hero.cta_explore">探索十大模块</a>
+          <a href="#dashboard" class="btn btn-outline btn-lg" data-i18n="hero.cta_dashboard">碳数据大屏</a>
+        </div>
+      </div>
+    </section>
+    <!-- ========== KPI Row ========== -->
+    <section class="container">
+      <div class="kpi-row">
+        <div class="kpi animate-in d1" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="12850" data-suffix="">12,850</div>
+          <div class="kpi-label">累计碳减排 (tCO₂e)</div>
+          <div class="kpi-trend up">↑ 23% vs 上年同期</div>
+        </div>
+        <div class="kpi animate-in d2" style="--kpi-color: var(--accent);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="3847">3,847</div>
+          <div class="kpi-label">平台注册用户</div>
+          <div class="kpi-trend neutral">覆盖 32 个国家/地区</div>
+        </div>
+        <div class="kpi animate-in d3" style="--kpi-color: var(--amber);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="12680">12,680</div>
+          <div class="kpi-label">已交易咖啡豆 (吨)</div>
+          <div class="kpi-trend up">区块链溯源 100%</div>
+        </div>
+        <div class="kpi animate-in d4" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="9570000" data-prefix="¥" data-suffix="">¥9,570,000</div>
+          <div class="kpi-label">众筹累计金额</div>
+          <div class="kpi-trend up">支持 186 个低碳项目</div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Carbon Journey (SVG pipeline) ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">全链路可视化</div>
+            <h2>碳足迹旅程 <span class="gradient-text">从雾培舱到咖啡杯</span>
+            </h2>
+          </div>
+          <p class="sub">每个环节的碳排放实时计量 · 区块链上链不可篡改</p>
+        </div>
+        <div class="journey">
+          <div class="journey-track">
+            <a href="modules/planting.html" class="journey-node">
+              <div class="journey-node-orb">
+              </div>
+              <div class="journey-node-label">雾化水培</div>
+              <div class="journey-node-carbon">0.08 kg</div>
+            </a>
+            <div class="journey-line">
+            </div>
+            <a href="modules/processing.html" class="journey-node">
+              <div class="journey-node-orb">
+              </div>
+              <div class="journey-node-label">低碳加工</div>
+              <div class="journey-node-carbon">0.15 kg</div>
+            </a>
+            <div class="journey-line">
+            </div>
+            <a href="modules/trade.html" class="journey-node">
+              <div class="journey-node-orb">
+              </div>
+              <div class="journey-node-label">数字贸易</div>
+              <div class="journey-node-carbon">0.22 kg</div>
+            </a>
+            <div class="journey-line">
+            </div>
+            <a href="modules/roasting.html" class="journey-node">
+              <div class="journey-node-orb">
+              </div>
+              <div class="journey-node-label">烘焙空间</div>
+              <div class="journey-node-carbon">0.31 kg</div>
+            </a>
+            <div class="journey-line">
+            </div>
+            <a href="modules/ip-trading.html" class="journey-node">
+              <div class="journey-node-orb">
+              </div>
+              <div class="journey-node-label">IP交易</div>
+              <div class="journey-node-carbon">+碳效率</div>
+            </a>
+            <div class="journey-line">
+            </div>
+            <a href="modules/coffee-bank.html" class="journey-node">
+              <div class="journey-node-orb">
+              </div>
+              <div class="journey-node-label">咖啡银行</div>
+              <div class="journey-node-carbon">0.04 kg</div>
+            </a>
+            <div class="journey-line">
+            </div>
+            <a href="modules/crowdfunding.html" class="journey-node">
+              <div class="journey-node-orb">
+              </div>
+              <div class="journey-node-label">低碳众筹</div>
+              <div class="journey-node-carbon">-碳积分</div>
+            </a>
+            <div class="journey-line">
+            </div>
+            <a href="modules/cafe.html" class="journey-node">
+              <div class="journey-node-orb">
+              </div>
+              <div class="journey-node-label">咖啡馆</div>
+              <div class="journey-node-carbon">0.12 kg</div>
+            </a>
+          </div>
+        </div>
+        <!-- Carbon footprint comparison bar -->
+        <div style="margin-top: 32px; display: flex; gap: 24px; align-items: stretch; flex-wrap: wrap;">
+          <div class="glass" style="flex: 1; padding: 24px; min-width: 280px;">
+            <div style="font-size: 0.8rem; color: var(--text-3); margin-bottom: 8px;">传统咖啡产业链</div>
+            <div style="font-size: 2rem; font-weight: 900; font-family: var(--font-mono); color: var(--red);">0.92<span style="font-size: 0.9rem; color: var(--text-3);"> kgCO₂e/杯</span>
+            </div>
+            <div style="margin-top: 12px; height: 8px; background: var(--bg-1); border-radius: 4px; overflow: hidden;">
+              <div style="height: 100%; width: 100%; background: linear-gradient(90deg, #c0392b, var(--red)); border-radius: 4px;">
+              </div>
+            </div>
+          </div>
+          <div class="glass" style="flex: 1; padding: 24px; min-width: 280px; border-color: rgba(0, 230, 118, 0.2);">
+            <div style="font-size: 0.8rem; color: var(--green); margin-bottom: 8px;">本平台·雾培全链路</div>
+            <div style="font-size: 2rem; font-weight: 900; font-family: var(--font-mono); color: var(--green);">0.18<span style="font-size: 0.9rem; color: var(--text-3);"> kgCO₂e/杯</span>
+            </div>
+            <div style="margin-top: 12px; height: 8px; background: var(--bg-1); border-radius: 4px; overflow: hidden;">
+              <div style="height: 100%; width: 20%; background: linear-gradient(90deg, var(--green-lo), var(--green)); border-radius: 4px;">
+              </div>
+            </div>
+            <div style="font-size: 0.75rem; color: var(--green); margin-top: 6px;">↓ 碳足迹降低 80.4%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Carbon Dashboard ========== -->
+    <section class="section" id="dashboard">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">实时数据</div>
+            <h2>碳数据大屏 <span class="gradient-text">全链路监控</span>
+            </h2>
+          </div>
+          <button class="btn btn-outline btn-sm" data-refresh style="gap: 6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 4 23 10 17 10"/>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+            </svg>
+            刷新数据
+          </button>
+        </div>
+        <div class="dash-panel">
+          <!-- Left: Area Chart -->
+          <div class="panel animate-in d1">
+            <div class="panel-head">
+              <span class="panel-title">碳减排月度趋势 (tCO₂e)</span>
+              <span class="panel-badge live">LIVE</span>
+            </div>
+            <svg class="area-chart" viewBox="0 0 600 280" preserveAspectRatio="none">
+              <!-- Grid -->
+              <g class="grid">
+                <line x1="40" y1="40" x2="580" y2="40"/>
+                <line x1="40" y1="100" x2="580" y2="100"/>
+                <line x1="40" y1="160" x2="580" y2="160"/>
+                <line x1="40" y1="220" x2="580" y2="220"/>
+              </g>
+              <!-- Y axis labels -->
+              <g class="axis">
+                <text x="10" y="44">6k</text>
+                <text x="10" y="104">4k</text>
+                <text x="10" y="164">2k</text>
+                <text x="10" y="224">0</text>
+              </g>
+              <!-- X axis labels -->
+              <g class="axis">
+                <text x="40" y="245">1月</text>
+                <text x="130" y="245">2月</text>
+                <text x="220" y="245">3月</text>
+                <text x="310" y="245">4月</text>
+                <text x="400" y="245">5月</text>
+                <text x="490" y="245">6月</text>
+                <text x="560" y="245">7月</text>
+              </g>
+              <!-- Area fill -->
+              <path class="area-fill" fill="url(#grad-green)" d="M 40 200 L 100 185 L 160 170 L 220 140 L 280 110 L 340 80 L 400 65 L 460 50 L 520 35 L 560 30 L 560 220 L 40 220 Z"/>
+              <!-- Line -->
+              <path class="line-stroke" stroke="url(#grad-line)" data-animate-path d="M 40 200 L 100 185 L 160 170 L 220 140 L 280 110 L 340 80 L 400 65 L 460 50 L 520 35 L 560 30"/>
+              <!-- Data points -->
+              <g fill="var(--green)" stroke="var(--bg-0)" stroke-width="2">
+                <circle cx="40" cy="200" r="4"/>
+                <circle cx="100" cy="185" r="4"/>
+                <circle cx="160" cy="170" r="4"/>
+                <circle cx="220" cy="140" r="4"/>
+                <circle cx="280" cy="110" r="4"/>
+                <circle cx="340" cy="80" r="4"/>
+                <circle cx="400" cy="65" r="4"/>
+                <circle cx="460" cy="50" r="4"/>
+                <circle cx="520" cy="35" r="4"/>
+                <circle cx="560" cy="30" r="5" fill="var(--green-hi)"/>
+              </g>
+              <!-- Highlight last point -->
+              <text x="560" y="20" text-anchor="end" fill="var(--green-hi)" font-size="11" font-family="var(--font-mono)" font-weight="700">1,820 tCO₂e</text>
+              <!-- Gradients -->
+              <defs>
+                <linearGradient id="grad-green" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#00e676" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="#00e676" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="grad-line" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#00b248"/>
+                  <stop offset="100%" stop-color="#69f0ae"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <!-- Right: Donut + Offset Projects -->
+          <div class="dash-panel-right">
+            <!-- Donut Chart -->
+            <div class="panel animate-in d2">
+              <div class="panel-head">
+                <span class="panel-title">年度碳目标达成</span>
+              </div>
+              <div class="donut-wrap">
+                <div class="donut">
+                  <svg width="150" height="150" viewBox="0 0 150 150">
+                    <circle cx="75" cy="75" r="62" fill="none" stroke="var(--bg-1)" stroke-width="14"/>
+                    <circle cx="75" cy="75" r="62" fill="none" stroke="var(--green)" stroke-width="14"
+                    stroke-dasharray="389.6" stroke-dashoffset="77.9" stroke-linecap="round"/>
+                  </svg>
+                  <div class="donut-center">
+                    <div class="donut-val" style="color: var(--green);">80%</div>
+                    <div class="donut-label">12,850 / 16,000</div>
+                  </div>
+                </div>
+                <div class="donut-legend">
+                  <div class="donut-legend-item">
+                    <span class="donut-legend-dot" style="background: var(--green);">
+                    </span>
+                    <span>已实现</span>
+                  </div>
+                  <div class="donut-legend-item">
+                    <span class="donut-legend-dot" style="background: var(--text-4);">
+                    </span>
+                    <span>剩余目标</span>
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.75rem; color: var(--green);">预计 11月达成</div>
+                </div>
+              </div>
+            </div>
+            <!-- Carbon Offset Projects -->
+            <div class="panel animate-in d3" style="flex: 1;">
+              <div class="panel-head">
+                <span class="panel-title">碳抵消项目</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;"> 太阳能仓储电站</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--green);">+2,450 t</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;"> 咖啡种植区碳汇林</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--green);">+1,880 t</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;"> 咖啡渣生物炭转化</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--green);">+920 t</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
+                  <span style="font-size: 0.85rem;"> 风能烘焙供电</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--green);">+680 t</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bar chart: Carbon reduction by module -->
+        <div class="panel animate-in d4" style="margin-top: 14px;">
+          <div class="panel-head">
+            <span class="panel-title">各环节碳减排贡献 (tCO₂e/年)</span>
+            <span class="panel-badge live">LIVE</span>
+          </div>
+          <div class="hbar-list">
+            <div class="hbar-row">
+              <span class="hbar-label">雾化水培</span>
+              <div class="hbar-track">
+                <div class="hbar-fill green" style="width: 92%;">4,820</div>
+              </div>
+              <span class="hbar-val" style="color: var(--green);">4,820</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">低碳加工</span>
+              <div class="hbar-track">
+                <div class="hbar-fill green" style="width: 58%;">3,040</div>
+              </div>
+              <span class="hbar-val" style="color: var(--green);">3,040</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">绿色物流</span>
+              <div class="hbar-track">
+                <div class="hbar-fill blue" style="width: 45%;">2,350</div>
+              </div>
+              <span class="hbar-val" style="color: var(--accent);">2,350</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">共享烘焙</span>
+              <div class="hbar-track">
+                <div class="hbar-fill blue" style="width: 32%;">1,680</div>
+              </div>
+              <span class="hbar-val" style="color: var(--accent);">1,680</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">绿色仓储</span>
+              <div class="hbar-track">
+                <div class="hbar-fill amber" style="width: 22%;">1,150</div>
+              </div>
+              <span class="hbar-val" style="color: var(--amber);">1,150</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">可循环包装</span>
+              <div class="hbar-track">
+                <div class="hbar-fill amber" style="width: 15%;">780</div>
+              </div>
+              <span class="hbar-val" style="color: var(--amber);">780</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">终端消费</span>
+              <div class="hbar-track">
+                <div class="hbar-fill purple" style="width: 10%;">510</div>
+              </div>
+              <span class="hbar-val" style="color: var(--purple);">510</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== 8 Module Cards ========== -->
+    <section class="section" id="modules">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">环环双扣 · 五条纽带</div>
+            <h2>十大业务模块</h2>
+          </div>
+          <p class="sub">碳数据 · 区块链溯源 · 金融服务 · IP价值 · 众筹资本</p>
+        </div>
+        <div class="module-grid">
+          <a href="modules/planting.html" class="module-card animate-in d1" style="--mc-color: var(--green);">
+            <span class="module-card-num">01</span>
+            <span class="module-card-tag">零土壤</span>
+            <div class="module-card-icon green">
+            </div>
+            <h3>雾化水培种植链</h3>
+            <p>全球首创雾化水培咖啡种植。根系喝雾、无土生长，节水90%+，碳足迹降低60%+</p>
+            <div class="module-card-meta">
+              <span> 320+ 种植户</span>
+              <span> 12 国</span>
+            </div>
+          </a>
+          <a href="modules/processing.html" class="module-card animate-in d2" style="--mc-color: var(--accent);">
+            <span class="module-card-num">02</span>
+            <div class="module-card-icon blue">
+            </div>
+            <h3>低碳咖啡加工</h3>
+            <p>加工产能共享、能耗实时监测、废弃物资源化。全电动设备减碳80%+</p>
+            <div class="module-card-meta">
+              <span> 86 家工厂</span>
+              <span> 节能42%</span>
+            </div>
+          </a>
+          <a href="modules/trade.html" class="module-card animate-in d3" style="--mc-color: var(--accent);">
+            <span class="module-card-num">03</span>
+            <div class="module-card-icon blue">
+            </div>
+            <h3>数字咖啡贸易</h3>
+            <p>全球生豆供需撮合、区块链溯源、智能合约结算、碳足迹可视化采购</p>
+            <div class="module-card-meta">
+              <span> ¥2.4亿</span>
+              <span> 100%溯源</span>
+            </div>
+          </a>
+          <a href="modules/roasting.html" class="module-card animate-in d4" style="--mc-color: var(--amber);">
+            <span class="module-card-num">04</span>
+            <div class="module-card-icon amber">
+            </div>
+            <h3>烘焙共享空间</h3>
+            <p>工作室预约、设备租赁、烘焙师社区、远程监控。共享空间降低碳足迹</p>
+            <div class="module-card-meta">
+              <span> 48 间</span>
+              <span> 210+ 烘焙师</span>
+            </div>
+          </a>
+          <a href="modules/ip-trading.html" class="module-card animate-in d5" style="--mc-color: var(--amber);">
+            <span class="module-card-num">05</span>
+            <div class="module-card-icon amber">
+            </div>
+            <h3>烘焙曲线IP交易</h3>
+            <p>曲线上传存证、版权确权、碳效率评级、智能推荐、IP授权收益分成</p>
+            <div class="module-card-meta">
+              <span> 1,250+ 曲线</span>
+              <span> ¥380万</span>
+            </div>
+          </a>
+          <a href="modules/coffee-bank.html" class="module-card animate-in d6" style="--mc-color: var(--amber);">
+            <span class="module-card-num">06</span>
+            <div class="module-card-icon amber">
+            </div>
+            <h3>咖啡储蓄银行</h3>
+            <p>专业仓储管理、数字仓单质押融资、品质检测分级、仓储碳足迹核算</p>
+            <div class="module-card-meta">
+              <span> 8,500吨</span>
+              <span> ¥1.2亿融资</span>
+            </div>
+          </a>
+          <a href="modules/crowdfunding.html" class="module-card animate-in d7" style="--mc-color: var(--green);">
+            <span class="module-card-num">07</span>
+            <div class="module-card-icon green">
+            </div>
+            <h3>低碳众筹平台</h3>
+            <p>种植户项目众筹、碳普惠机制、透明化追踪、碳积分奖励支持者</p>
+            <div class="module-card-meta">
+              <span> 186 项目</span>
+              <span> 5,200+ 支持者</span>
+            </div>
+          </a>
+          <a href="modules/cafe.html" class="module-card animate-in d8" style="--mc-color: var(--accent);">
+            <span class="module-card-num">08</span>
+            <div class="module-card-icon blue">
+            </div>
+            <h3>低碳咖啡馆</h3>
+            <p>线上商城、门店联盟、碳足迹可视化、自带杯奖励、碳中和门店认证</p>
+            <div class="module-card-meta">
+              <span> 680+ 商品</span>
+              <span> 120+ 门店</span>
+            </div>
+          </a>
+          <a href="modules/b2b-pricing.html" class="module-card animate-in d1" style="--mc-color: var(--accent);">
+            <span class="module-card-num">09</span>
+            <span class="module-card-tag">骨架</span>
+            <div class="module-card-icon blue">
+            </div>
+            <h3>B2B 动态定价</h3>
+            <p>产量领先指标驱动智能定价引擎，零库存保证服务，期现匹配套保闭环</p>
+            <div class="module-card-meta">
+              <span> 248 合约</span>
+              <span> 42 保证客户</span>
+            </div>
+          </a>
+          <a href="modules/rwa-stablecoin.html" class="module-card animate-in d2" style="--mc-color: var(--purple);">
+            <span class="module-card-num">10</span>
+            <span class="module-card-tag" style="color: var(--purple); background: var(--purple-dim);">王冠</span>
+            <div class="module-card-icon" style="background: var(--purple-dim);">
+            </div>
+            <h3>RWA 与稳定币</h3>
+            <p>咖啡豆仓单通证(CT)锚定实物，CT/USDC流动性池，JEBI稳定币超额抵押</p>
+            <div class="module-card-meta">
+              <span> 328万 CT</span>
+              <span> $18.4M TVL</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Three Flywheels ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">自我强化增长引擎</div>
+            <h2>三大飞轮效应</h2>
+          </div>
+          <p class="sub">品质 · 碳价值 · 数据 — 三个飞轮相互咬合，彼此加速</p>
+        </div>
+        <div class="flywheel-grid">
+          <div class="flywheel-card animate-in d1">
+            <div class="flywheel-card-icon green">
+            </div>
+            <h4>品质飞轮</h4>
+            <p>雾培高品质豆驱动全链路品质提升，市场反馈反哺种植端优化方案。</p>
+            <div class="flywheel-chain">
+              <span>雾培高品质豆</span>
+              <em>→</em>
+              <span>精细化加工</span>
+              <em>→</em>
+              <span>贸易溢价</span>
+              <em>→</em>
+              <span>优质曲线</span>
+              <em>→</em>
+              <span>消费者好评</span>
+              <em>→</em>
+              <span>市场反馈</span>
+              <em>→</em>
+              <span>优化雾培</span>
+            </div>
+          </div>
+          <div class="flywheel-card animate-in d2">
+            <div class="flywheel-card-icon" style="background: var(--green-dim);">
+            </div>
+            <h4>碳价值飞轮</h4>
+            <p>低碳豆的碳标签从种植端贯穿到消费端，碳积分回流反哺雾培扩建。</p>
+            <div class="flywheel-chain">
+              <span>雾培低碳豆</span>
+              <em>→</em>
+              <span>碳标签仓单</span>
+              <em>→</em>
+              <span>贸易低碳溢价</span>
+              <em>→</em>
+              <span>众筹碳积分</span>
+              <em>→</em>
+              <span>消费者碳普惠</span>
+              <em>→</em>
+              <span>资金投入雾培</span>
+            </div>
+          </div>
+          <div class="flywheel-card animate-in d3">
+            <div class="flywheel-card-icon" style="background: var(--accent-dim);">
+            </div>
+            <h4>数据飞轮</h4>
+            <p>消费端口味数据驱动IP曲线优化和烘焙方案调整，最终反哺种植端。</p>
+            <div class="flywheel-chain">
+              <span>消费者口味数据</span>
+              <em>→</em>
+              <span>IP热门曲线</span>
+              <em>→</em>
+              <span>烘焙方案优化</span>
+              <em>→</em>
+              <span>营养液配方调整</span>
+              <em>→</em>
+              <span>更符合市场的豆</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== News ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>最新动态</h2>
+          <a href="#" class="btn btn-outline btn-sm">查看全部 →</a>
+        </div>
+        <div class="news-grid">
+          <a href="#" class="news-card animate-in d1">
+            <span class="news-card-tag tech">技术突破</span>
+            <h4>第二代雾化水培舱落地云南，产能提升300%</h4>
+            <p>新一代雾培舱采用AI营养液动态调配系统，生长周期缩短至传统种植的1/3，节水率突破95%...</p>
+            <div class="news-card-date">2026-08-03</div>
+          </a>
+          <a href="#" class="news-card animate-in d2">
+            <span class="news-card-tag carbon">碳交易</span>
+            <h4>平台首批碳信用上线，单月交易额突破¥500万</h4>
+            <p>基于雾培种植碳汇计量模型生成的可交易碳信用正式接入区域碳市场，标志着咖啡碳资产化落地...</p>
+            <div class="news-card-date">2026-07-28</div>
+          </a>
+          <a href="#" class="news-card animate-in d3">
+            <span class="news-card-tag biz">产业合作</span>
+            <h4>与TYPICA达成战略合作，共建全球低碳咖啡贸易网络</h4>
+            <p>双方将在碳足迹核算标准、区块链溯源、跨境贸易等领域展开深度合作，推动全行业低碳转型...</p>
+            <div class="news-card-date">2026-07-20</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3> JEBI HUB</h3>
+            <p>中国首个覆盖"从种子到杯子"全链条的咖啡低碳产业互联网平台。以雾化水培技术为起点，构建咖啡全产业链低碳生态圈。</p>
+          </div>
+          <div class="footer-col">
+            <h4>产业链</h4>
+            <a href="modules/planting.html">雾化水培种植链</a>
+            <a href="modules/processing.html">低碳咖啡加工</a>
+            <a href="modules/trade.html">数字咖啡贸易</a>
+            <a href="modules/roasting.html">烘焙共享空间</a>
+          </div>
+          <div class="footer-col">
+            <h4>碳经济</h4>
+            <a href="modules/ip-trading.html">烘焙曲线IP交易</a>
+            <a href="modules/coffee-bank.html">咖啡储蓄银行</a>
+            <a href="modules/crowdfunding.html">低碳众筹平台</a>
+            <a href="modules/cafe.html">低碳咖啡馆</a>
+          </div>
+          <div class="footer-col">
+            <h4>私人央行</h4>
+            <a href="modules/b2b-pricing.html">B2B 动态定价平台</a>
+            <a href="modules/rwa-stablecoin.html">RWA 与稳定币平台</a>
+          </div>
+          <div class="footer-col">
+            <h4>关于</h4>
+            <a href="modules/about.html">关于我们</a>
+            <a href="modules/methodology.html">碳核算方法论</a>
+            <a href="modules/join-platform.html">加入平台</a>
+            <a href="modules/contact.html">联系我们</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 JEBI HUB. <span data-i18n="footer.copyright">每一杯咖啡都有碳账本。</span></p>
+          <p style="display: flex; align-items: center; gap: 4px;">
+            <span style="color: var(--green);">●</span> <span data-i18n="footer.status">平台运行状态：正常</span></p>
+          </div>
+        </div>
+      </footer>
+      <script src="js/i18n.js"></script>
+      <script src="js/main.js">
+      </script>
+    </body>
+  </html>

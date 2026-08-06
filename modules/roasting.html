@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烘焙共享空间 — JEBI HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+          <span>JEBI HUB</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+          <a href="../index.html#modules" class="nav-link" data-i18n="nav.modules">模块</a>
+          <a href="../index.html#dashboard" class="nav-link" data-i18n="nav.carbon_data">碳数据</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="lang-current">ZH</span>
+            </button>
+            <div class="lang-switcher-menu">
+              <div class="lang-option active" data-lang="zh">中文</div>
+              <div class="lang-option" data-lang="en">English</div>
+              <div class="lang-option" data-lang="ar">العربية</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="page-header" style="--ph-glow: rgba(255, 183, 77, 0.08);">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">首页</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>烘焙空间</span>
+        </div>
+        <div class="page-header-content">
+          <div class="module-icon" style="background: var(--amber-dim);">
+          </div>
+          <h1>烘焙共享空间平台</h1>
+          <p class="module-desc">全球咖啡烘焙工作室/设备在线预约与租赁。烘焙师认证评级、烘焙工坊社区、远程烘焙监控。共享烘焙空间降低单个烘焙师的设备碳足迹。</p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="kpi" style="--kpi-color: var(--amber);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="48">48</div>
+          <div class="kpi-label">烘焙工作室</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--accent);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="210" data-suffix="+">210+</div>
+          <div class="kpi-label">认证烘焙师</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="1680">1,680</div>
+          <div class="kpi-label">年碳减排 (tCO₂e)</div>
+        </div>
+      </div>
+    </section>
+    <!-- Carbon Sharing Visualization -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">共享减碳</div>
+            <h2>共享 vs 独立烘焙碳足迹</h2>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="panel animate-in d1">
+            <div class="panel-head">
+              <span class="panel-title">独立烘焙师</span>
+              <span class="pill red">高碳排</span>
+            </div>
+            <div style="text-align: center; padding: 20px 0;">
+              <div style="font-size: 3rem; font-weight: 900; font-family: var(--font-mono); color: var(--red);">2.8<span style="font-size: 1rem; color: var(--text-3);"> kgCO₂e/kg</span>
+              </div>
+              <div style="margin-top: 12px; height: 8px; background: var(--bg-1); border-radius: 4px; overflow: hidden;">
+                <div style="height: 100%; width: 100%; background: linear-gradient(90deg, #c0392b, var(--red)); border-radius: 4px;">
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-3); margin-top: 8px;">设备利用率低 · 空闲能耗高</div>
+            </div>
+          </div>
+          <div class="panel animate-in d2" style="border-color: rgba(0, 230, 118, 0.2);">
+            <div class="panel-head">
+              <span class="panel-title">共享烘焙空间</span>
+              <span class="pill green">低碳排</span>
+            </div>
+            <div style="text-align: center; padding: 20px 0;">
+              <div style="font-size: 3rem; font-weight: 900; font-family: var(--font-mono); color: var(--green);">1.1<span style="font-size: 1rem; color: var(--text-3);"> kgCO₂e/kg</span>
+              </div>
+              <div style="margin-top: 12px; height: 8px; background: var(--bg-1); border-radius: 4px; overflow: hidden;">
+                <div style="height: 100%; width: 39%; background: linear-gradient(90deg, var(--green-lo), var(--green)); border-radius: 4px;">
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--green); margin-top: 8px;">↓ 碳足迹降低 60.7%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">核心功能</div>
+            <h2>六大能力</h2>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card animate-in d1">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>工作室在线预约</h4>
+            <p>按地点、设备类型、时间段筛选，在线预约并支付。支持小时/天/包月租赁。</p>
+          </div>
+          <div class="feature-card animate-in d2">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>设备租赁</h4>
+            <p>Probat、Diedrich、Giesen等主流品牌烘焙机租赁，1kg至60kg规格全覆盖。</p>
+          </div>
+          <div class="feature-card animate-in d3">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>烘焙师认证体系</h4>
+            <p>技能评级（初级/中级/高级/大师）、烘焙赛事成绩、社区声望三维认证。</p>
+          </div>
+          <div class="feature-card animate-in d4">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>烘焙工坊社区</h4>
+            <p>技术交流论坛、线上烘焙赛事、线下培训工作坊、行业大咖分享。</p>
+          </div>
+          <div class="feature-card animate-in d5">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>远程烘焙监控</h4>
+            <p>Cropster/Artisan数据同步，实时监控烘焙曲线，远程调整参数。</p>
+          </div>
+          <div class="feature-card animate-in d6">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>能耗数据可视化</h4>
+            <p>每次烘焙的能耗数据自动记录与可视化，激励节能烘焙实践。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="lc-banner">
+          <h3> 共享烘焙的低碳价值</h3>
+          <p>一台专业烘焙机的全生命周期碳排放是固定的，被更多烘焙师共享使用，则每人次的设备碳足迹大幅降低。平台优先引入全电动、低碳烘焙设备。</p>
+          <ul>
+            <li>共享空间降低单人设备碳足迹 60%+</li>
+            <li>全电动烘焙机较燃气减少碳排放 80%+</li>
+            <li>烘焙能耗数据计入碳账本，可兑换碳积分</li>
+            <li>低碳烘焙师获得平台流量倾斜与推荐位</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Studios -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>热门工作室</h2>
+        </div>
+        <div class="grid-3">
+          <div class="feature-card animate-in d1">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>上海静安零碳烘焙坊</h4>
+            <p style="font-size: 0.85rem;">设备：Probat P12 | 全电动 | <span class="pill green">AA级</span>
+            </p>
+            <p style="font-size: 0.8rem; color: var(--text-3); margin-top: 8px;" class="mono">¥280/小时 · 4.9</p>
+          </div>
+          <div class="feature-card animate-in d2">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>深圳南山共享烘焙室</h4>
+            <p style="font-size: 0.85rem;">设备：Giesen W6 | 电热 | <span class="pill green">A级</span>
+            </p>
+            <p style="font-size: 0.8rem; color: var(--text-3); margin-top: 8px;" class="mono">¥200/小时 · 4.8</p>
+          </div>
+          <div class="feature-card animate-in d3">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>成都太古里烘焙共创空间</h4>
+            <p style="font-size: 0.85rem;">设备：Diedrich IR-12 | 电热 | <span class="pill green">A级</span>
+            </p>
+            <p style="font-size: 0.8rem; color: var(--text-3); margin-top: 8px;" class="mono">¥260/小时 · 4.7</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; justify-content: center;">
+          <p>&copy; 2026 JEBI HUB. 每一杯咖啡都有碳账本。</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js">
+    </script>
+  </body>
+</html>

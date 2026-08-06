@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B 动态定价平台 — JEBI HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ========== Navigation ========== -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+          <span>JEBI HUB</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger">
+              产业链
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="planting.html" class="nav-dropdown-item"> 种植链 <span class="badge">零土壤</span>
+              </a>
+              <a href="processing.html" class="nav-dropdown-item"> 低碳加工</a>
+              <a href="trade.html" class="nav-dropdown-item"> 数字贸易</a>
+              <a href="roasting.html" class="nav-dropdown-item"> 烘焙空间</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger">
+              碳经济
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="ip-trading.html" class="nav-dropdown-item"> IP交易中心</a>
+              <a href="coffee-bank.html" class="nav-dropdown-item"> 咖啡银行</a>
+              <a href="crowdfunding.html" class="nav-dropdown-item"> 低碳众筹</a>
+              <a href="cafe.html" class="nav-dropdown-item"> 咖啡馆</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger" style="color: var(--accent); background: var(--accent-dim);">
+              私人央行
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="b2b-pricing.html" class="nav-dropdown-item"> B2B动态定价 <span class="badge">骨架</span>
+              </a>
+              <a href="rwa-stablecoin.html" class="nav-dropdown-item"> RWA与稳定币 <span class="badge">王冠</span>
+              </a>
+            </div>
+          </div>
+          <a href="../index.html#dashboard" class="nav-link" data-i18n="nav.carbon_data">碳数据</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="lang-current">ZH</span>
+            </button>
+            <div class="lang-switcher-menu">
+              <div class="lang-option active" data-lang="zh">中文</div>
+              <div class="lang-option" data-lang="en">English</div>
+              <div class="lang-option" data-lang="ar">العربية</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== Page Header ========== -->
+    <section class="page-header" style="--ph-glow: rgba(29, 155, 240, 0.10);">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">首页</a>
+          <span class="breadcrumb-sep">/</span>
+          <a href="../index.html#modules">私人央行</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>B2B 动态定价</span>
+        </div>
+        <div class="page-header-content">
+          <div class="module-icon" style="background: var(--accent-dim);">
+          </div>
+          <h1>B2B 动态定价平台 <span class="gradient-text">贸易与供应链的骨架</span>
+          </h1>
+          <p class="module-desc">
+            依托全球 30% 水培咖啡产能，将"供应链即服务"产品化。实时库存、产量预测、生长周期数据驱动智能定价引擎，
+            向下游大客户承诺"供应确定性"，将数据优势直接转化为稳定现金流与现货头寸。
+          </p>
+          <div class="hero-cta" style="margin-top: 32px;">
+            <a href="#pricing" class="btn btn-primary btn-lg">查看实时报价</a>
+            <a href="#guarantee" class="btn btn-outline btn-lg">零库存保证服务</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== KPI Row ========== -->
+    <section class="container">
+      <div class="kpi-row">
+        <div class="kpi animate-in d1" style="--kpi-color: var(--accent);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="248">248</div>
+          <div class="kpi-label">在执行合约</div>
+          <div class="kpi-trend up">↑ 18% 较上月</div>
+        </div>
+        <div class="kpi animate-in d2" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="3850">3,850</div>
+          <div class="kpi-label">本月交付量 (吨)</div>
+          <div class="kpi-trend up">履约率 99.6%</div>
+        </div>
+        <div class="kpi animate-in d3" style="--kpi-color: var(--amber);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="42">42</div>
+          <div class="kpi-label">零库存保证客户</div>
+          <div class="kpi-trend neutral">覆盖 18 国</div>
+        </div>
+        <div class="kpi animate-in d4" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="98000000" data-prefix="¥" data-suffix="">¥9,800万</div>
+          <div class="kpi-label">月度平台流水</div>
+          <div class="kpi-trend up">服务费率 0.8%</div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Dynamic Pricing Engine Flow ========== -->
+    <section class="section" id="engine">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">定价中枢</div>
+            <h2>动态定价引擎 <span class="gradient-text">数据 → 报价 → 合约 → 对冲</span>
+            </h2>
+          </div>
+          <p class="sub">平台最强 alpha · 产量领先指标 · 自动生成动态报价</p>
+        </div>
+        <div class="panel animate-in d1">
+          <div class="engine-flow">
+            <div class="engine-step">
+              <div class="engine-step-icon">
+              </div>
+              <h4>Dashboard 数据输入</h4>
+              <p>实时库存、产量预测、设备检修计划、生长周期、品质分级数据持续上链。</p>
+            </div>
+            <div class="engine-arrow">→</div>
+            <div class="engine-step">
+              <div class="engine-step-icon">
+              </div>
+              <h4>智能定价算法</h4>
+              <p>融合私有数据 + USDA/ICE 公开行情，按品种匹配、规模匹配、期限匹配生成报价。</p>
+            </div>
+            <div class="engine-arrow">→</div>
+            <div class="engine-step">
+              <div class="engine-step-icon">
+              </div>
+              <h4>合约自动生成</h4>
+              <p>库存积压触发闪购；产量预警挂出远期升水；智能合约锁定价格与交付窗口。</p>
+            </div>
+            <div class="engine-arrow">→</div>
+            <div class="engine-step">
+              <div class="engine-step-icon">
+              </div>
+              <h4>套保台联动</h4>
+              <p>远期合约头寸直送自营交易台，期现匹配在 ICE 期货对冲，形成闭环。</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="lc-banner" style="margin: 0;">
+            <h3> 库存积压 → 闪购触发</h3>
+            <p>当 Dashboard 显示库存周转天数超过阈值，引擎自动挂出"特价"闪购合约，快速去库存，回笼现金流。</p>
+          </div>
+          <div class="lc-banner" style="margin: 0; border-color: rgba(255, 183, 77, 0.12); background: linear-gradient(135deg, rgba(255,183,77,0.06), rgba(255,183,77,0.01));">
+            <h3 style="color: var(--amber);"> 产量预警 → 远期升水</h3>
+            <p>当设备检修或生长周期显示未来两月产量将降，系统自动挂出远期升水合约，提前锁定未来高价。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Live Contract Pricing Table ========== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">实时报价</div>
+            <h2>动态合约报价表</h2>
+          </div>
+          <span class="panel-badge live">LIVE · 每 15 秒刷新</span>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>品种 / 产地</th>
+                <th>等级</th>
+                <th>类型</th>
+                <th>当前报价</th>
+                <th>24h 变动</th>
+                <th>可售库存</th>
+                <th>定价信号</th>
+                <th>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>雾培阿拉比卡 · 云南</td>
+                <td>
+                  <span class="tier-badge platinum">铂金</span>
+                </td>
+                <td>现货</td>
+                <td class="hl">¥48.6/kg</td>
+                <td style="color: var(--red);">↑ 2.4%</td>
+                <td>1,240 t</td>
+                <td>
+                  <span class="pill amber">产量预警</span>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-outline btn-sm">下单</a>
+                </td>
+              </tr>
+              <tr>
+                <td>雾培阿拉比卡 · 海南</td>
+                <td>
+                  <span class="tier-badge gold">金</span>
+                </td>
+                <td>现货</td>
+                <td class="hl">¥41.2/kg</td>
+                <td style="color: var(--green);">↓ 1.1%</td>
+                <td>2,860 t</td>
+                <td>
+                  <span class="pill green">库存充裕</span>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-outline btn-sm">下单</a>
+                </td>
+              </tr>
+              <tr>
+                <td>雾培罗布斯塔 · 云南</td>
+                <td>
+                  <span class="tier-badge silver">银</span>
+                </td>
+                <td>现货</td>
+                <td class="hl">¥33.8/kg</td>
+                <td style="color: var(--red);">↑ 0.6%</td>
+                <td>1,580 t</td>
+                <td>
+                  <span class="pill amber">闪购中</span>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-primary btn-sm">抢购</a>
+                </td>
+              </tr>
+              <tr>
+                <td>雾培阿拉比卡 · 云南</td>
+                <td>
+                  <span class="tier-badge platinum">铂金</span>
+                </td>
+                <td>远期 (3M)</td>
+                <td class="hl">¥52.4/kg</td>
+                <td style="color: var(--red);">↑ 3.8%</td>
+                <td>680 t</td>
+                <td>
+                  <span class="pill amber">远期升水</span>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-outline btn-sm">锁价</a>
+                </td>
+              </tr>
+              <tr>
+                <td>雾培阿拉比卡 · 海南</td>
+                <td>
+                  <span class="tier-badge gold">金</span>
+                </td>
+                <td>远期 (6M)</td>
+                <td class="hl">¥45.0/kg</td>
+                <td style="color: var(--red);">↑ 1.9%</td>
+                <td>920 t</td>
+                <td>
+                  <span class="pill blue">设备检修</span>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-outline btn-sm">锁价</a>
+                </td>
+              </tr>
+              <tr>
+                <td>雾培混合拼配 · 仓单</td>
+                <td>
+                  <span class="tier-badge bronze">铜</span>
+                </td>
+                <td>现货</td>
+                <td class="hl">¥28.5/kg</td>
+                <td style="color: var(--green);">↓ 2.7%</td>
+                <td>4,120 t</td>
+                <td>
+                  <span class="pill green">闪购特价</span>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-primary btn-sm">抢购</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size: 0.76rem; color: var(--text-4); margin-top: 12px;">
+          报价基于水培产量领先指标 · 含碳标签溢价 · 区块链溯源全覆盖 · 智能合约结算
+        </p>
+      </div>
+    </section>
+    <!-- ========== Contract Types ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">合约矩阵</div>
+            <h2>三大合约类型</h2>
+          </div>
+          <p class="sub">现货 · 远期 · 零库存保证 — 覆盖全采购场景</p>
+        </div>
+        <div class="contract-grid">
+          <div class="contract-card animate-in d1" style="--cc-color: var(--accent);">
+            <span class="contract-card-tag" style="color: var(--accent); background: var(--accent-dim);">现货即发</span>
+            <h3>现货合约</h3>
+            <p>基于实时库存的即期交付。库存充裕时触发闪购特价，适合快速补货与试单采购。</p>
+            <div class="contract-card-terms">
+              <div>
+                <span>交付窗口</span>
+                <span>T+3 ~ T+7</span>
+              </div>
+              <div>
+                <span>最小起订</span>
+                <span>5 吨</span>
+              </div>
+              <div>
+                <span>结算方式</span>
+                <span>智能合约 · 链上</span>
+              </div>
+              <div>
+                <span>碳标签</span>
+                <span style="color: var(--green);">铜/银/金/铂金</span>
+              </div>
+            </div>
+          </div>
+          <div class="contract-card animate-in d2" style="--cc-color: var(--amber);">
+            <span class="contract-card-tag" style="color: var(--amber); background: var(--amber-dim);">远期锁价</span>
+            <h3>远期合约</h3>
+            <p>锁定未来 1-12 个月交付价格。产量预警期挂出升水合约，下游提前锁定成本，平台提前锁定订单。</p>
+            <div class="contract-card-terms">
+              <div>
+                <span>期限</span>
+                <span>1M / 3M / 6M / 12M</span>
+              </div>
+              <div>
+                <span>最小起订</span>
+                <span>20 吨</span>
+              </div>
+              <div>
+                <span>升水/贴水</span>
+                <span>动态引擎生成</span>
+              </div>
+              <div>
+                <span>对冲</span>
+                <span style="color: var(--accent);">期现匹配 · ICE</span>
+              </div>
+            </div>
+          </div>
+          <div class="contract-card animate-in d3" style="--cc-color: var(--green);">
+            <span class="contract-card-tag" style="color: var(--green); background: var(--green-dim);">订阅服务</span>
+            <h3>零库存保证</h3>
+            <p>面向头部客户的核心服务。承诺未来 12 个月无论市场如何波动，确保供应量不减少。收取 15% 溢价作为保险费。</p>
+            <div class="contract-card-terms">
+              <div>
+                <span>承诺周期</span>
+                <span>12 个月</span>
+              </div>
+              <div>
+                <span>供应保证</span>
+                <span style="color: var(--green);">100% 不减量</span>
+              </div>
+              <div>
+                <span>溢价</span>
+                <span>+15% 保险费</span>
+              </div>
+              <div>
+                <span>客户门槛</span>
+                <span>年采 ≥ 500 吨</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Zero-Stock Guarantee Spotlight ========== -->
+    <section class="section" id="guarantee">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">护城河产品</div>
+            <h2>零库存保证 <span class="gradient-green">供应确定性即服务</span>
+            </h2>
+          </div>
+          <p class="sub">下游大客户最怕的不是价格，而是断供</p>
+        </div>
+        <div class="dash-panel">
+          <!-- Left: value proposition -->
+          <div class="panel animate-in d1">
+            <div class="panel-head">
+              <span class="panel-title">为什么客户愿意付 15% 溢价</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 18px;">
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div style="font-size: 1.4rem;">
+                </div>
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: 4px;">断供风险归零</h4>
+                  <p style="font-size: 0.82rem; color: var(--text-2);">无论干旱、设备检修或市场剧烈波动，12 个月供应量分毫不少。</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div style="font-size: 1.4rem;">
+                </div>
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: 4px;">成本可预测</h4>
+                  <p style="font-size: 0.82rem; color: var(--text-2);">锁定远期价格，采购成本入预算，消除咖啡豆价格剧烈波动带来的利润侵蚀。</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div style="font-size: 1.4rem;">
+                </div>
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: 4px;">碳标签背书</h4>
+                  <p style="font-size: 0.82rem; color: var(--text-2);">全链路低碳认证 + 区块链溯源，ESG 报告与消费者沟通的硬资产。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right: coverage donut + KPIs -->
+          <div class="dash-panel-right">
+            <div class="panel animate-in d2">
+              <div class="panel-head">
+                <span class="panel-title">保证服务履约率</span>
+              </div>
+              <div class="donut-wrap">
+                <div class="donut">
+                  <svg width="150" height="150" viewBox="0 0 150 150">
+                    <circle cx="75" cy="75" r="62" fill="none" stroke="var(--bg-1)" stroke-width="14"/>
+                    <circle cx="75" cy="75" r="62" fill="none" stroke="var(--green)" stroke-width="14"
+                    stroke-dasharray="389.6" stroke-dashoffset="1.6" stroke-linecap="round"/>
+                  </svg>
+                  <div class="donut-center">
+                    <div class="donut-val" style="color: var(--green);">99.6%</div>
+                    <div class="donut-label">历史履约</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel animate-in d3" style="flex: 1;">
+              <div class="panel-head">
+                <span class="panel-title">保证服务关键指标</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;">在保客户</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--accent);">42 家</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;">承诺总量</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--green);">18,600 t/年</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-1);">
+                  <span style="font-size: 0.85rem;">溢价收入</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--amber);">¥1.28 亿</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 10px 0;">
+                  <span style="font-size: 0.85rem;">覆盖国家</span>
+                  <span class="mono" style="font-size: 0.85rem; color: var(--text-1);">18 国</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Client Roster ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">头部客户</div>
+            <h2>保证服务客户矩阵</h2>
+          </div>
+          <p class="sub">头部采购商的供应确定性，由我们的产能兜底</p>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>客户（匿名化）</th>
+                <th>客户层级</th>
+                <th>合约类型</th>
+                <th>年承诺量</th>
+                <th>交付窗口</th>
+                <th>状态</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>北美连锁烘焙巨头 A</td>
+                <td>
+                  <span class="tier-badge platinum">铂金</span>
+                </td>
+                <td>零库存保证</td>
+                <td class="hl">4,200 t</td>
+                <td>12 个月</td>
+                <td>
+                  <span class="pill green">履约中</span>
+                </td>
+              </tr>
+              <tr>
+                <td>欧洲食品集团 B</td>
+                <td>
+                  <span class="tier-badge platinum">铂金</span>
+                </td>
+                <td>零库存保证</td>
+                <td class="hl">3,800 t</td>
+                <td>12 个月</td>
+                <td>
+                  <span class="pill green">履约中</span>
+                </td>
+              </tr>
+              <tr>
+                <td>亚洲速溶咖啡龙头 C</td>
+                <td>
+                  <span class="tier-badge gold">金</span>
+                </td>
+                <td>远期 (6M)</td>
+                <td class="hl">2,600 t</td>
+                <td>6 个月</td>
+                <td>
+                  <span class="pill green">履约中</span>
+                </td>
+              </tr>
+              <tr>
+                <td>北美精品烘焙联盟 D</td>
+                <td>
+                  <span class="tier-badge gold">金</span>
+                </td>
+                <td>远期 (3M)</td>
+                <td class="hl">1,400 t</td>
+                <td>3 个月</td>
+                <td>
+                  <span class="pill amber">交付中</span>
+                </td>
+              </tr>
+              <tr>
+                <td>中东咖啡连锁 E</td>
+                <td>
+                  <span class="tier-badge silver">银</span>
+                </td>
+                <td>现货</td>
+                <td class="hl">980 t</td>
+                <td>T+5</td>
+                <td>
+                  <span class="pill blue">待交付</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Hedging Closed Loop ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">期现闭环</div>
+            <h2>现货锁定 · 期货对冲 <span class="gradient-text">完美闭环</span>
+            </h2>
+          </div>
+          <p class="sub">贸易平台远期合约 = 自营交易台套保依据</p>
+        </div>
+        <div class="panel animate-in d1">
+          <div class="stepper">
+            <div class="step-item done">
+              <div class="step-circle">01</div>
+              <div class="step-label">远期合约</div>
+              <div class="step-desc">B2B 平台锁定客户远期订单与价格</div>
+            </div>
+            <div class="step-item done">
+              <div class="step-circle">02</div>
+              <div class="step-label">敞口上送</div>
+              <div class="step-desc">远期头寸实时同步至自营交易台</div>
+            </div>
+            <div class="step-item active">
+              <div class="step-circle">03</div>
+              <div class="step-label">期现匹配</div>
+              <div class="step-desc">交易台在 ICE 建立对应期货对冲头寸</div>
+            </div>
+            <div class="step-item">
+              <div class="step-circle">04</div>
+              <div class="step-label">闭环交收</div>
+              <div class="step-desc">现货交付 + 期货平仓 · 风险归零</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 14px;" class="grid-2">
+          <div class="panel animate-in d2">
+            <div class="panel-head">
+              <span class="panel-title">套保头寸监控 (ICE 咖啡期货)</span>
+              <span class="panel-badge live">LIVE</span>
+            </div>
+            <div class="hbar-list">
+              <div class="hbar-row">
+                <span class="hbar-label">多头对冲</span>
+                <div class="hbar-track">
+                  <div class="hbar-fill green" style="width: 82%;">3,420 t</div>
+                </div>
+                <span class="hbar-val" style="color: var(--green);">3,420 t</span>
+              </div>
+              <div class="hbar-row">
+                <span class="hbar-label">空头对冲</span>
+                <div class="hbar-track">
+                  <div class="hbar-fill blue" style="width: 58%;">2,410 t</div>
+                </div>
+                <span class="hbar-val" style="color: var(--accent);">2,410 t</span>
+              </div>
+              <div class="hbar-row">
+                <span class="hbar-label">期现匹配率</span>
+                <div class="hbar-track">
+                  <div class="hbar-fill amber" style="width: 96%;">96%</div>
+                </div>
+                <span class="hbar-val" style="color: var(--amber);">96%</span>
+              </div>
+            </div>
+            <p style="font-size: 0.76rem; color: var(--text-3); margin-top: 14px;">严格遵循品种匹配 · 规模匹配 · 期限匹配 · 全程保留现货合同备审计</p>
+          </div>
+          <div class="panel animate-in d3">
+            <div class="panel-head">
+              <span class="panel-title">期现匹配原则</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="padding: 14px; background: var(--bg-1); border-radius: var(--r-sm); border: 1px solid var(--border-1);">
+                <div style="font-size: 0.78rem; color: var(--green); font-weight: 700; margin-bottom: 4px;">品种匹配</div>
+                <p style="font-size: 0.8rem; color: var(--text-2);">期货品种与现货咖啡豆品种一一对应，杜绝跨品种投机。</p>
+              </div>
+              <div style="padding: 14px; background: var(--bg-1); border-radius: var(--r-sm); border: 1px solid var(--border-1);">
+                <div style="font-size: 0.78rem; color: var(--accent); font-weight: 700; margin-bottom: 4px;">规模匹配</div>
+                <p style="font-size: 0.8rem; color: var(--text-2);">期货持仓不超现货敞口，设定持仓限额与止损线。</p>
+              </div>
+              <div style="padding: 14px; background: var(--bg-1); border-radius: var(--r-sm); border: 1px solid var(--border-1);">
+                <div style="font-size: 0.78rem; color: var(--amber); font-weight: 700; margin-bottom: 4px;">期限匹配</div>
+                <p style="font-size: 0.8rem; color: var(--text-2);">期货交割月与现货交付窗口对齐，避免展期风险。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Compliance Banner ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="lc-banner">
+          <h3> 合规是生命线</h3>
+          <p>所有贸易操作严格遵循"四流合一"（合同流、资金流、发票流、货物流）与商业实质原则。杜绝任何形式的融资性贸易或虚假贸易。每笔合约均生成链上溯源凭证，可审计、可追溯。</p>
+          <ul>
+            <li>四流合一 · 全程上链</li>
+            <li>商业实质审查</li>
+            <li>现货合同备审计</li>
+            <li>持仓限额与止损线</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3> JEBI HUB</h3>
+            <p>中国首个覆盖"从种子到杯子"全链条的咖啡低碳产业互联网平台。以雾化水培技术为起点，构建咖啡全产业链低碳生态圈。</p>
+          </div>
+          <div class="footer-col">
+            <h4>产业链</h4>
+            <a href="planting.html">雾化水培种植链</a>
+            <a href="processing.html">低碳咖啡加工</a>
+            <a href="trade.html">数字咖啡贸易</a>
+            <a href="roasting.html">烘焙共享空间</a>
+          </div>
+          <div class="footer-col">
+            <h4>私人央行</h4>
+            <a href="b2b-pricing.html">B2B 动态定价平台</a>
+            <a href="rwa-stablecoin.html">RWA 与稳定币平台</a>
+          </div>
+          <div class="footer-col">
+            <h4>关于</h4>
+            <a href="#">关于我们</a>
+            <a href="#">碳核算方法论</a>
+            <a href="#">加入平台</a>
+            <a href="#">联系我们</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 JEBI HUB. 每一杯咖啡都有碳账本。</p>
+          <p style="display: flex; align-items: center; gap: 4px;">
+            <span style="color: var(--green);">●</span> 平台运行状态：正常</p>
+          </div>
+        </div>
+      </footer>
+      <script src="../js/i18n.js"></script>
+    <script src="../js/main.js">
+      </script>
+    </body>
+  </html>

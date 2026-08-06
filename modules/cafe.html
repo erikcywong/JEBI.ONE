@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>低碳咖啡馆 — JEBI HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+          <span>JEBI HUB</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+          <a href="../index.html#modules" class="nav-link" data-i18n="nav.modules">模块</a>
+          <a href="../index.html#dashboard" class="nav-link" data-i18n="nav.carbon_data">碳数据</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="lang-current">ZH</span>
+            </button>
+            <div class="lang-switcher-menu">
+              <div class="lang-option active" data-lang="zh">中文</div>
+              <div class="lang-option" data-lang="en">English</div>
+              <div class="lang-option" data-lang="ar">العربية</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="page-header" style="--ph-glow: rgba(29, 155, 240, 0.08);">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">首页</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>咖啡馆</span>
+        </div>
+        <div class="page-header-content">
+          <div class="module-icon" style="background: var(--accent-dim);">
+          </div>
+          <h1>低碳咖啡馆</h1>
+          <p class="module-desc">线下低碳咖啡馆联盟+线上咖啡商城。每杯咖啡碳足迹可视化——从种植到杯子的全链条碳排。可降解包装、自带杯减碳奖励、咖啡渣回收计划、碳中和门店认证。</p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="kpi" style="--kpi-color: var(--accent);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="120" data-suffix="+">120+</div>
+          <div class="kpi-label">联盟门店</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="680" data-suffix="+">680+</div>
+          <div class="kpi-label">低碳商品</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--amber);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="510">510</div>
+          <div class="kpi-label">终端碳减排 (tCO₂e)</div>
+        </div>
+      </div>
+    </section>
+    <!-- Carbon Footprint Per Cup -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">每杯碳账本</div>
+            <h2>一杯咖啡的完整碳足迹</h2>
+          </div>
+        </div>
+        <div class="cf-breakdown">
+          <div class="cf-step">
+            <div class="cf-step-icon">
+            </div>
+            <div class="cf-step-label">雾培种植</div>
+            <div class="cf-step-val green">0.08 kg</div>
+          </div>
+          <div class="cf-step">
+            <div class="cf-step-icon">
+            </div>
+            <div class="cf-step-label">加工</div>
+            <div class="cf-step-val green">0.03 kg</div>
+          </div>
+          <div class="cf-step">
+            <div class="cf-step-icon">
+            </div>
+            <div class="cf-step-label">物流</div>
+            <div class="cf-step-val amber">0.04 kg</div>
+          </div>
+          <div class="cf-step">
+            <div class="cf-step-icon">
+            </div>
+            <div class="cf-step-label">烘焙</div>
+            <div class="cf-step-val amber">0.02 kg</div>
+          </div>
+          <div class="cf-step">
+            <div class="cf-step-icon">
+            </div>
+            <div class="cf-step-label">终端</div>
+            <div class="cf-step-val green">0.01 kg</div>
+          </div>
+        </div>
+        <div style="margin-top: 16px; display: flex; gap: 24px; align-items: center; justify-content: center; flex-wrap: wrap;">
+          <div style="text-align: center;">
+            <span style="font-size: 0.8rem; color: var(--text-3);">本平台·每杯碳足迹</span>
+            <div style="font-size: 1.8rem; font-weight: 900; font-family: var(--font-mono); color: var(--green);">0.18<span style="font-size: 0.9rem; color: var(--text-3);"> kgCO₂e</span>
+            </div>
+          </div>
+          <div style="width: 1px; height: 40px; background: var(--border-2);">
+          </div>
+          <div style="text-align: center;">
+            <span style="font-size: 0.8rem; color: var(--text-3);">传统咖啡·每杯碳足迹</span>
+            <div style="font-size: 1.8rem; font-weight: 900; font-family: var(--font-mono); color: var(--red);">0.92<span style="font-size: 0.9rem; color: var(--text-3);"> kgCO₂e</span>
+            </div>
+          </div>
+          <div style="width: 1px; height: 40px; background: var(--border-2);">
+          </div>
+          <div style="text-align: center;">
+            <span style="font-size: 0.8rem; color: var(--green);">碳足迹降低</span>
+            <div style="font-size: 1.8rem; font-weight: 900; font-family: var(--font-mono); color: var(--green);">80.4%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>低碳商城 — 热门商品</h2>
+        </div>
+        <div class="product-grid">
+          <div class="product-card animate-in d1">
+            <div class="product-img">
+            </div>
+            <div class="product-body">
+              <h4>云南普洱·雾培挂耳咖啡</h4>
+              <div class="product-origin">产地：中国云南 · 雾化水培</div>
+              <div class="product-carbon"> 碳足迹：0.12 kgCO₂e/杯</div>
+              <div class="product-price">¥68<span style="font-size: 0.8rem; color: var(--text-3); font-weight: 400;"> / 10包装</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card animate-in d2">
+            <div class="product-img">
+            </div>
+            <div class="product-body">
+              <h4>埃塞·耶加雪菲冻干粉</h4>
+              <div class="product-origin">产地：埃塞俄比亚 · 耶加雪菲</div>
+              <div class="product-carbon"> 碳足迹：0.18 kgCO₂e/杯</div>
+              <div class="product-price">¥128<span style="font-size: 0.8rem; color: var(--text-3); font-weight: 400;"> / 50g</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card animate-in d3">
+            <div class="product-img">
+            </div>
+            <div class="product-body">
+              <h4>哥伦比亚·慧兰熟豆</h4>
+              <div class="product-origin">产地：哥伦比亚 · 慧兰产区</div>
+              <div class="product-carbon"> 碳足迹：0.15 kgCO₂e/杯</div>
+              <div class="product-price">¥158<span style="font-size: 0.8rem; color: var(--text-3); font-weight: 400;"> / 250g</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card animate-in d4">
+            <div class="product-img">
+            </div>
+            <div class="product-body">
+              <h4>零碳咖啡套装·礼盒</h4>
+              <div class="product-origin">多产地 · 碳中和认证</div>
+              <div class="product-carbon" style="color: var(--green-hi);"> 碳足迹：0.00 kgCO₂e（已抵消）</div>
+              <div class="product-price">¥298<span style="font-size: 0.8rem; color: var(--text-3); font-weight: 400;"> / 礼盒</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">核心功能</div>
+            <h2>六大能力</h2>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card animate-in d1">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>线上商城</h4>
+            <p>挂耳、冻干粉、熟豆、器具一站式购买，每件商品标注碳足迹。</p>
+          </div>
+          <div class="feature-card animate-in d2">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>门店查询</h4>
+            <p>全国低碳咖啡馆联盟地图，按碳等级筛选，在线查看门店碳数据。</p>
+          </div>
+          <div class="feature-card animate-in d3">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>碳足迹可视化</h4>
+            <p>每杯咖啡的完整碳足迹：种植→加工→物流→烘焙→门店，扫码可查。</p>
+          </div>
+          <div class="feature-card animate-in d4">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>会员体系</h4>
+            <p>咖啡订阅服务、碳积分会员、自带杯奖励、低碳消费排行榜。</p>
+          </div>
+          <div class="feature-card animate-in d5">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>咖啡渣回收</h4>
+            <p>门店咖啡渣统一回收，转化为生物炭、有机肥料、生物质燃料。</p>
+          </div>
+          <div class="feature-card animate-in d6">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>碳中和认证</h4>
+            <p>门店碳足迹核算+碳抵消=碳中和认证，分级：铜/银/金/铂金。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="lc-banner">
+          <h3> 每杯咖啡的碳账本</h3>
+          <p>消费者扫描杯身二维码，即可查看这杯咖啡从雾培种子到手中的完整碳足迹。每一克碳排放都有区块链记录，真实、透明、不可篡改。</p>
+          <ul>
+            <li>雾培种植：0.08 kgCO₂e/杯（传统种植：0.35）</li>
+            <li>自带杯减碳：-0.02 kgCO₂e/杯</li>
+            <li>可降解包装：-0.01 kgCO₂e/杯</li>
+            <li>碳中和门店：终端净排放 = 0</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Stores Table -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>碳中和门店</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>门店名称</th>
+                <th>城市</th>
+                <th>碳等级</th>
+                <th>碳减排 (tCO₂e/年)</th>
+                <th>咖啡渣回收</th>
+                <th>自带杯率</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>零碳咖啡·上海静安旗舰店</td>
+                <td>上海</td>
+                <td>
+                  <span class="pill green">铂金</span>
+                </td>
+                <td class="hl">48.5</td>
+                <td> 100%</td>
+                <td>62%</td>
+              </tr>
+              <tr>
+                <td>雾培咖啡·深圳南山店</td>
+                <td>深圳</td>
+                <td>
+                  <span class="pill green">金</span>
+                </td>
+                <td class="hl">32.0</td>
+                <td> 100%</td>
+                <td>55%</td>
+              </tr>
+              <tr>
+                <td>低碳咖·成都太古里店</td>
+                <td>成都</td>
+                <td>
+                  <span class="pill amber">银</span>
+                </td>
+                <td class="hl">18.2</td>
+                <td>部分回收</td>
+                <td>48%</td>
+              </tr>
+              <tr>
+                <td>GreenBean·北京国贸店</td>
+                <td>北京</td>
+                <td>
+                  <span class="pill amber">银</span>
+                </td>
+                <td class="hl">15.8</td>
+                <td> 100%</td>
+                <td>42%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; justify-content: center;">
+          <p>&copy; 2026 JEBI HUB. 每一杯咖啡都有碳账本。</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js">
+    </script>
+  </body>
+</html>

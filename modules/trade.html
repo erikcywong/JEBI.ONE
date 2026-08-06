@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字咖啡贸易 — JEBI HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+          <span>JEBI HUB</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+          <a href="../index.html#modules" class="nav-link" data-i18n="nav.modules">模块</a>
+          <a href="../index.html#dashboard" class="nav-link" data-i18n="nav.carbon_data">碳数据</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="lang-current">ZH</span>
+            </button>
+            <div class="lang-switcher-menu">
+              <div class="lang-option active" data-lang="zh">中文</div>
+              <div class="lang-option" data-lang="en">English</div>
+              <div class="lang-option" data-lang="ar">العربية</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="page-header" style="--ph-glow: rgba(29, 155, 240, 0.08);">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">首页</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>数字贸易</span>
+        </div>
+        <div class="page-header-content">
+          <div class="module-icon" style="background: var(--accent-dim);">
+          </div>
+          <h1>数字咖啡贸易平台</h1>
+          <p class="module-desc">全球咖啡生豆供需撮合与在线交易。区块链全程溯源（种植→加工→仓储→运输→报关），智能合约自动结算，每批咖啡豆碳足迹可视化。</p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="kpi" style="--kpi-color: var(--accent);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="240000000" data-prefix="¥" data-suffix="">¥2.4亿</div>
+          <div class="kpi-label">累计交易额</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="12680">12,680</div>
+          <div class="kpi-label">交易总量 (吨)</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--amber);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="100" data-suffix="%">100%</div>
+          <div class="kpi-label">溯源覆盖率</div>
+        </div>
+      </div>
+    </section>
+    <!-- Transport Carbon Comparison -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">物流碳排对比</div>
+            <h2>运输方式碳排放</h2>
+          </div>
+        </div>
+        <div class="panel animate-in d1">
+          <div class="panel-head">
+            <span class="panel-title">每吨·每千公里碳排放 (kgCO₂e)</span>
+          </div>
+          <div class="hbar-list">
+            <div class="hbar-row">
+              <span class="hbar-label"> 空运</span>
+              <div class="hbar-track">
+                <div class="hbar-fill" style="width: 100%; background: linear-gradient(90deg, #c0392b, var(--red));">500</div>
+              </div>
+              <span class="hbar-val" style="color: var(--red);">500</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label"> 公路</span>
+              <div class="hbar-track">
+                <div class="hbar-fill amber" style="width: 18%;">90</div>
+              </div>
+              <span class="hbar-val" style="color: var(--amber);">90</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label"> 铁路</span>
+              <div class="hbar-track">
+                <div class="hbar-fill blue" style="width: 5%;">25</div>
+              </div>
+              <span class="hbar-val" style="color: var(--accent);">25</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label"> 海运</span>
+              <div class="hbar-track">
+                <div class="hbar-fill green" style="width: 2%;">10</div>
+              </div>
+              <span class="hbar-val" style="color: var(--green);">10</span>
+            </div>
+          </div>
+          <div style="margin-top: 16px; display: flex; gap: 24px; font-size: 0.8rem;">
+            <span style="color: var(--green);"> 平台优先推荐海运</span>
+            <span style="color: var(--text-3);">海运碳排仅为空运的 1/50</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">核心功能</div>
+            <h2>六大能力</h2>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card animate-in d1">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>供需撮合交易</h4>
+            <p>全球生豆买卖双方在线匹配，按品种、等级、产地、碳标签筛选。现货与远期合约。</p>
+          </div>
+          <div class="feature-card animate-in d2">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>区块链溯源</h4>
+            <p>每批咖啡豆生成唯一溯源码，种植、加工、仓储、运输全流程上链，扫码可查。</p>
+          </div>
+          <div class="feature-card animate-in d3">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>智能合约结算</h4>
+            <p>基于区块链的智能合约自动执行支付、放款、权属转移，消除人为纠纷和延迟。</p>
+          </div>
+          <div class="feature-card animate-in d4">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>跨境贸易服务</h4>
+            <p>报关、物流、保险一站式。优先推荐低碳海运方案（海运 vs 空运碳排对比）。</p>
+          </div>
+          <div class="feature-card animate-in d5">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>碳足迹可视化</h4>
+            <p>采购商结账即可查看该批次完整碳足迹：种植→加工→物流→仓储全链条。</p>
+          </div>
+          <div class="feature-card animate-in d6">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>低碳认证标签</h4>
+            <p>"低碳咖啡"分级认证：铜/银/金/铂金四级，溢价区间5%-25%。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="lc-banner">
+          <h3> 碳足迹可视化——采购即减碳</h3>
+          <p>每批上架生豆携带完整的"种植碳标签+加工碳标签+物流碳标签"。采购商可直观对比不同批次的环境成本。</p>
+          <ul>
+            <li>海运碳排仅为空运的 1/50，平台优先推荐</li>
+            <li>低碳认证豆享有搜索排名加权</li>
+            <li>年度低碳采购商评选与碳积分奖励</li>
+            <li>交易碳数据自动计入企业ESG报告</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Auction -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>竞拍大厅 — 热门批次</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>批次编号</th>
+                <th>品种</th>
+                <th>产地</th>
+                <th>数量 (kg)</th>
+                <th>碳足迹 (kgCO₂e/kg)</th>
+                <th>起拍价</th>
+                <th>当前价</th>
+                <th>状态</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono">LC-2026-0801</td>
+                <td>瑰夏·水洗</td>
+                <td>巴拿马</td>
+                <td class="hl">300</td>
+                <td class="hl">1.2</td>
+                <td>¥580/kg</td>
+                <td class="mono" style="color: var(--accent);">¥720/kg</td>
+                <td>
+                  <span class="pill amber">竞拍中</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="mono">LC-2026-0802</td>
+                <td>阿拉比卡·雾培</td>
+                <td>中国云南</td>
+                <td class="hl">1,500</td>
+                <td class="hl">0.8</td>
+                <td>¥120/kg</td>
+                <td class="mono" style="color: var(--accent);">¥155/kg</td>
+                <td>
+                  <span class="pill amber">竞拍中</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="mono">LC-2026-0803</td>
+                <td>原生种·耶加雪菲</td>
+                <td>埃塞俄比亚</td>
+                <td class="hl">800</td>
+                <td class="hl">1.5</td>
+                <td>¥210/kg</td>
+                <td class="mono" style="color: var(--accent);">¥245/kg</td>
+                <td>
+                  <span class="pill green">即将结束</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="mono">LC-2026-0804</td>
+                <td>卡斯蒂略·厌氧</td>
+                <td>哥伦比亚</td>
+                <td class="hl">600</td>
+                <td class="hl">1.1</td>
+                <td>¥165/kg</td>
+                <td class="mono">¥168/kg</td>
+                <td>
+                  <span class="pill" style="color: var(--text-3); background: var(--bg-elevated);">即将开始</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; justify-content: center;">
+          <p>&copy; 2026 JEBI HUB. 每一杯咖啡都有碳账本。</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js">
+    </script>
+  </body>
+</html>

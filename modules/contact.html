@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 — JEBI HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+          <span>JEBI HUB</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+          <a href="../index.html#modules" class="nav-link" data-i18n="nav.modules">模块</a>
+          <a href="../index.html#dashboard" class="nav-link" data-i18n="nav.carbon">碳数据</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="lang-current">ZH</span>
+            </button>
+            <div class="lang-switcher-menu">
+              <div class="lang-option active" data-lang="zh">中文</div>
+              <div class="lang-option" data-lang="en">English</div>
+              <div class="lang-option" data-lang="ar">العربية</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="page-header" style="--ph-glow: rgba(29, 155, 240, 0.08);">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="breadcrumb.home">首页</a>
+          <span class="breadcrumb-sep">/</span>
+          <span data-i18n="contact.breadcrumb">联系我们</span>
+        </div>
+        <div class="page-header-content">
+          <div class="module-icon" style="background: var(--accent-dim);">
+          </div>
+          <h1 data-i18n="contact.title">联系我们（Contact Us）</h1>
+          <p class="module-desc" data-i18n="contact.desc">
+            与 JEBI HUB 团队取得联系。无论是商务合作、技术咨询还是平台入驻，我们随时待命。
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Channels -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow" data-i18n="contact.channels.eyebrow">联系方式</div>
+            <h2 data-i18n="contact.channels.title">三个渠道，随时联系</h2>
+          </div>
+        </div>
+        <div class="contact-grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="contact-card animate-in d1">
+            <span class="contact-channel green" data-i18n="contact.channel1.badge">WhatsApp</span>
+            <div class="contact-label" data-i18n="contact.channel1.label">WhatsApp</div>
+            <div class="contact-value">+852 9318 8252</div>
+            <div class="contact-desc" data-i18n="contact.channel1.desc">商务合作与平台入驻咨询，最快 2 小时内回复。</div>
+          </div>
+          <div class="contact-card animate-in d2">
+            <span class="contact-channel blue" data-i18n="contact.channel2.badge">WeChat</span>
+            <div class="contact-label" data-i18n="contact.channel2.label">WeChat（微信）</div>
+            <div class="contact-value">+86 158 0022 2338</div>
+            <div class="contact-desc" data-i18n="contact.channel2.desc">中国大陆用户首选，扫码添加客服微信。</div>
+          </div>
+          <div class="contact-card animate-in d3">
+            <span class="contact-channel amber" data-i18n="contact.channel3.badge">Email</span>
+            <div class="contact-label" data-i18n="contact.channel3.label">Email（电子邮件）</div>
+            <div class="contact-value">erik.wong@jebi.space</div>
+            <div class="contact-desc" data-i18n="contact.channel3.desc">技术文档、商务提案与合作协议，请发送邮件。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Office Info -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow" data-i18n="contact.office.eyebrow">办公信息</div>
+            <h2 data-i18n="contact.office.title">JEBI HUB 总部</h2>
+          </div>
+        </div>
+        <div class="panel animate-in d1">
+          <div class="panel-head">
+            <span class="panel-title" data-i18n="contact.office.panel">办公室详情</span>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 8px 0;">
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;" data-i18n="contact.office.location.label">所在地（Location）</div>
+              <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-1);" data-i18n="contact.office.location.value">中国香港（Hong Kong, China）</div>
+            </div>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;" data-i18n="contact.office.hours.label">办公时间（Hours）</div>
+              <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-1);" data-i18n="contact.office.hours.value">周一至周五 9:00-18:00 HKT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="lc-banner">
+          <h3 data-i18n="contact.faq.title">常见问题（FAQ）</h3>
+          <p data-i18n="contact.faq.desc">关于 JEBI HUB 平台的常见问题解答。如未涵盖您的问题，请通过上方联系方式与我们沟通。</p>
+          <ul>
+            <li data-i18n="contact.faq.item1">如何入驻平台？——注册账户后提交资质审核，通常 3 个工作日内完成验证</li>
+            <li data-i18n="contact.faq.item2">碳核算如何收费？——基础碳标签免费，高级碳信用认证按交易量阶梯计费</li>
+            <li data-i18n="contact.faq.item3">支持哪些支付方式？——微信支付、银行卡、USDT 稳定币及 JEBI HUB 碳信用</li>
+            <li data-i18n="contact.faq.item4">雾培设备如何采购？——平台提供全套雾化水培设备租赁与采购方案，请联系商务团队</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; justify-content: center;">
+          <p>&copy; 2026 JEBI HUB. 每一杯咖啡都有碳账本。</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js">
+    </script>
+  </body>
+</html>

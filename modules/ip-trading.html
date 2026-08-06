@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烘焙曲线IP交易中心 — JEBI HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+          <span>JEBI HUB</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+          <a href="../index.html#modules" class="nav-link" data-i18n="nav.modules">模块</a>
+          <a href="../index.html#dashboard" class="nav-link" data-i18n="nav.carbon_data">碳数据</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="lang-current">ZH</span>
+            </button>
+            <div class="lang-switcher-menu">
+              <div class="lang-option active" data-lang="zh">中文</div>
+              <div class="lang-option" data-lang="en">English</div>
+              <div class="lang-option" data-lang="ar">العربية</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="page-header" style="--ph-glow: rgba(255, 183, 77, 0.08);">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">首页</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>IP交易中心</span>
+        </div>
+        <div class="page-header-content">
+          <div class="module-icon" style="background: var(--amber-dim);">
+          </div>
+          <h1>烘焙曲线IP交易中心</h1>
+          <p class="module-desc">咖啡烘焙曲线数据上传、存储、展示与交易。烘焙师IP确权与版权保护（区块链存证），烘焙曲线智能推荐与匹配，IP授权使用与收益分成。</p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="kpi" style="--kpi-color: var(--amber);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="1250" data-suffix="+">1,250+</div>
+          <div class="kpi-label">烘焙曲线</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--accent);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="3800000" data-prefix="¥" data-suffix="">¥380万</div>
+          <div class="kpi-label">累计交易额</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="210" data-suffix="+">210+</div>
+          <div class="kpi-label">认证烘焙师</div>
+        </div>
+      </div>
+    </section>
+    <!-- SVG Roasting Curve Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">曲线可视化</div>
+            <h2>热门烘焙曲线</h2>
+          </div>
+          <p class="sub">每个曲线标注"碳效率"指标（单位能耗产出风味评分）</p>
+        </div>
+        <div class="grid-3">
+          <!-- IP Card 1 -->
+          <div class="ip-card animate-in d1">
+            <div class="ip-curve-preview">
+              <svg width="100%" height="100%" viewBox="0 0 280 140" preserveAspectRatio="none">
+                <line x1="0" y1="120" x2="280" y2="120" stroke="var(--border-1)" stroke-width="1"/>
+                <line x1="0" y1="0" x2="0" y2="120" stroke="var(--border-1)" stroke-width="1"/>
+                <!-- Bean temp curve -->
+                <path d="M 0 100 Q 50 90 80 75 T 160 45 T 240 25 L 270 20" fill="none" stroke="var(--amber)" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Environment temp -->
+                <path d="M 0 110 Q 60 105 100 95 T 200 70 T 270 55" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3" opacity="0.6"/>
+                <!-- ROR -->
+                <path d="M 0 60 Q 40 40 60 55 T 120 50 T 200 65 T 270 70" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.5"/>
+                <!-- Crack point -->
+                <circle cx="160" cy="45" r="3" fill="var(--red)"/>
+                <text x="165" y="40" fill="var(--red)" font-size="8" font-family="var(--font-mono)">1st Crack</text>
+              </svg>
+            </div>
+            <div class="ip-card-body">
+              <h4>云南雾培·中深烘曲线 #A001</h4>
+              <div class="ip-card-author">by Master Chen · SCA 88分</div>
+              <div class="ip-card-meta">
+                <span>⏱ 12:30</span>
+                <span> 218°C</span>
+                <span> Diedrich IR-12</span>
+              </div>
+              <div style="margin-top: 12px; display: flex; align-items: center; justify-content: space-between;">
+                <span class="ip-card-price">¥2,800</span>
+                <span class="ip-card-ce"> 碳效率 92</span>
+              </div>
+            </div>
+          </div>
+          <!-- IP Card 2 -->
+          <div class="ip-card animate-in d2">
+            <div class="ip-curve-preview">
+              <svg width="100%" height="100%" viewBox="0 0 280 140" preserveAspectRatio="none">
+                <line x1="0" y1="120" x2="280" y2="120" stroke="var(--border-1)" stroke-width="1"/>
+                <line x1="0" y1="0" x2="0" y2="120" stroke="var(--border-1)" stroke-width="1"/>
+                <path d="M 0 105 Q 40 95 70 80 T 140 50 T 220 30 L 270 28" fill="none" stroke="var(--amber)" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 0 112 Q 50 108 90 98 T 180 75 T 270 60" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3" opacity="0.6"/>
+                <circle cx="140" cy="50" r="3" fill="var(--red)"/>
+                <text x="145" y="45" fill="var(--red)" font-size="8" font-family="var(--font-mono)">1st Crack</text>
+              </svg>
+            </div>
+            <div class="ip-card-body">
+              <h4>埃塞耶加雪菲·浅烘 #B012</h4>
+              <div class="ip-card-author">by Roaster Li · SCA 86分</div>
+              <div class="ip-card-meta">
+                <span>⏱ 10:15</span>
+                <span> 198°C</span>
+                <span> Probat P12</span>
+              </div>
+              <div style="margin-top: 12px; display: flex; align-items: center; justify-content: space-between;">
+                <span class="ip-card-price">¥1,800</span>
+                <span class="ip-card-ce"> 碳效率 88</span>
+              </div>
+            </div>
+          </div>
+          <!-- IP Card 3 -->
+          <div class="ip-card animate-in d3">
+            <div class="ip-curve-preview">
+              <svg width="100%" height="100%" viewBox="0 0 280 140" preserveAspectRatio="none">
+                <line x1="0" y1="120" x2="280" y2="120" stroke="var(--border-1)" stroke-width="1"/>
+                <line x1="0" y1="0" x2="0" y2="120" stroke="var(--border-1)" stroke-width="1"/>
+                <path d="M 0 95 Q 50 85 80 70 T 160 35 T 240 15 L 270 12" fill="none" stroke="var(--amber)" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 0 108 Q 60 100 100 88 T 200 60 T 270 45" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3" opacity="0.6"/>
+                <circle cx="155" cy="38" r="3" fill="var(--red)"/>
+                <text x="160" y="33" fill="var(--red)" font-size="8" font-family="var(--font-mono)">1st Crack</text>
+                <circle cx="230" cy="17" r="3" fill="var(--purple)"/>
+                <text x="195" y="12" fill="var(--purple)" font-size="8" font-family="var(--font-mono)">2nd Crack</text>
+              </svg>
+            </div>
+            <div class="ip-card-body">
+              <h4>哥伦比亚·深烘曲线 #C007</h4>
+              <div class="ip-card-author">by Master Wang · SCA 85分</div>
+              <div class="ip-card-meta">
+                <span>⏱ 14:45</span>
+                <span> 232°C</span>
+                <span> Giesen W6</span>
+              </div>
+              <div style="margin-top: 12px; display: flex; align-items: center; justify-content: space-between;">
+                <span class="ip-card-price">¥3,200</span>
+                <span class="ip-card-ce"> 碳效率 75</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">核心功能</div>
+            <h2>六大能力</h2>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card animate-in d1">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>曲线上传存储</h4>
+            <p>支持Cropster/Artisan格式导入，时间、温度、风门等参数完整记录与展示。</p>
+          </div>
+          <div class="feature-card animate-in d2">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>区块链确权</h4>
+            <p>烘焙曲线数据上链存证，版权保护不可篡改。确权证书可导出。</p>
+          </div>
+          <div class="feature-card animate-in d3">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>智能推荐匹配</h4>
+            <p>基于豆种、处理法、风味偏好的烘焙曲线智能推荐，降低试错成本。</p>
+          </div>
+          <div class="feature-card animate-in d4">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>授权与分润</h4>
+            <p>智能合约自动执行授权和收益分成，创作者获得持续版税收入。</p>
+          </div>
+          <div class="feature-card animate-in d5">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>碳效率评级</h4>
+            <p>每个曲线标注"碳效率"（单位能耗产出杯测评分），碳效率高获优先推荐。</p>
+          </div>
+          <div class="feature-card animate-in d6">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>曲线碳标签</h4>
+            <p>建立烘焙曲线碳标签体系，消费者可查看所购咖啡使用的曲线碳效率。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="lc-banner">
+          <h3> 碳效率——烘焙IP的新维度</h3>
+          <p>传统烘焙曲线只关注风味产出。本平台首创"碳效率"指标：单位能耗产出的杯测评分。碳效率高的曲线获得平台优先推荐和流量倾斜。</p>
+          <ul>
+            <li>碳效率 = 杯测评分 / 单位能耗 (kgCO₂e)</li>
+            <li>碳效率≥90：铂金推荐</li>
+            <li>碳效率80-89：金牌推荐</li>
+            <li>低碳曲线创作者享额外碳积分奖励</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; justify-content: center;">
+          <p>&copy; 2026 JEBI HUB. 每一杯咖啡都有碳账本。</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js">
+    </script>
+  </body>
+</html>

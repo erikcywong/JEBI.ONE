@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>低碳众筹平台 — JEBI HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+          <span>JEBI HUB</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+          <a href="../index.html#modules" class="nav-link" data-i18n="nav.modules">模块</a>
+          <a href="../index.html#dashboard" class="nav-link" data-i18n="nav.carbon_data">碳数据</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="lang-current">ZH</span>
+            </button>
+            <div class="lang-switcher-menu">
+              <div class="lang-option active" data-lang="zh">中文</div>
+              <div class="lang-option" data-lang="en">English</div>
+              <div class="lang-option" data-lang="ar">العربية</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="page-header" style="--ph-glow: rgba(0, 230, 118, 0.08);">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">首页</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>低碳众筹</span>
+        </div>
+        <div class="page-header-content">
+          <div class="module-icon" style="background: var(--green-dim);">
+          </div>
+          <h1>低碳众筹平台</h1>
+          <p class="module-desc">聚焦咖啡产业低碳转型的众筹平台。种植户/合作社发起低碳改造项目，消费者/投资者认购份额。所有项目必须通过低碳认证方可上线，支持者获得碳积分奖励。</p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="kpi" style="--kpi-color: var(--green);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="186">186</div>
+          <div class="kpi-label">众筹项目</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--accent);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="9570000" data-prefix="¥" data-suffix="">¥957万</div>
+          <div class="kpi-label">累计金额</div>
+        </div>
+        <div class="kpi" style="--kpi-color: var(--amber);">
+          <div class="kpi-icon">
+          </div>
+          <div class="kpi-val" data-count="5200" data-suffix="+">5,200+</div>
+          <div class="kpi-label">支持者</div>
+        </div>
+      </div>
+    </section>
+    <!-- Carbon普惠 Flow -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">碳普惠闭环</div>
+            <h2>消费 → 减碳 → 再投资</h2>
+          </div>
+        </div>
+        <div class="cf-breakdown">
+          <div class="cf-step">
+            <div class="cf-step-icon">
+            </div>
+            <div class="cf-step-label">消费者购买咖啡</div>
+            <div class="cf-step-val green">+碳积分</div>
+          </div>
+          <div class="cf-step">
+            <div class="cf-step-icon">
+            </div>
+            <div class="cf-step-label">碳积分支持众筹</div>
+            <div class="cf-step-val green">投资</div>
+          </div>
+          <div class="cf-step">
+            <div class="cf-step-icon">
+            </div>
+            <div class="cf-step-label">项目低碳改造</div>
+            <div class="cf-step-val green">减排</div>
+          </div>
+          <div class="cf-step">
+            <div class="cf-step-icon">
+            </div>
+            <div class="cf-step-label">产出低碳咖啡豆</div>
+            <div class="cf-step-val green">回商城</div>
+          </div>
+          <div class="cf-step">
+            <div class="cf-step-icon">
+            </div>
+            <div class="cf-step-label">循环加速</div>
+            <div class="cf-step-val green">飞轮</div>
+          </div>
+        </div>
+        <div style="margin-top: 16px; text-align: center; font-size: 0.85rem; color: var(--green);">
+          每¥100众筹资金 ≈ 减排 15kg CO₂e · 支持者碳积分可兑换精品咖啡或碳抵消
+        </div>
+      </div>
+    </section>
+    <!-- Crowdfunding Projects -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>热门众筹项目</h2>
+        </div>
+        <div class="grid-2">
+          <div class="cf-card animate-in d1">
+            <div style="display: flex; justify-content: space-between; align-items: start;">
+              <div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 4px;">云南普洱·第二代雾培舱扩建</h4>
+                <p style="font-size: 0.85rem; color: var(--text-2);">扩建12个AI雾培舱，产能提升300%，预计年减排4,200 tCO₂e</p>
+              </div>
+              <span class="pill green">低碳认证</span>
+            </div>
+            <div class="cf-progress">
+              <div class="cf-bar">
+                <div class="cf-fill" style="width: 85%;">
+                </div>
+              </div>
+              <div class="cf-meta">
+                <span>¥425,000</span>
+                <span>目标 ¥500,000 · 85%</span>
+              </div>
+            </div>
+            <div class="cf-tags">
+              <span> 186 支持者</span>
+              <span>⏰ 剩余 12 天</span>
+              <span style="color: var(--green);"> +6,375 碳积分</span>
+            </div>
+          </div>
+          <div class="cf-card animate-in d2">
+            <div style="display: flex; justify-content: space-between; align-items: start;">
+              <div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 4px;">海南万宁·零碳烘焙工坊建设</h4>
+                <p style="font-size: 0.85rem; color: var(--text-2);">全太阳能供电+全电动烘焙设备，零碳排放烘焙工坊</p>
+              </div>
+              <span class="pill green">低碳认证</span>
+            </div>
+            <div class="cf-progress">
+              <div class="cf-bar">
+                <div class="cf-fill" style="width: 62%;">
+                </div>
+              </div>
+              <div class="cf-meta">
+                <span>¥186,000</span>
+                <span>目标 ¥300,000 · 62%</span>
+              </div>
+            </div>
+            <div class="cf-tags">
+              <span> 95 支持者</span>
+              <span>⏰ 剩余 20 天</span>
+              <span style="color: var(--green);"> +2,790 碳积分</span>
+            </div>
+          </div>
+          <div class="cf-card animate-in d3" style="opacity: 0.75;">
+            <div style="display: flex; justify-content: space-between; align-items: start;">
+              <div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 4px;">哥伦比亚·安第斯雾培站二期</h4>
+                <p style="font-size: 0.85rem; color: var(--text-2);">新增8个雾培舱，覆盖高海拔阿拉比卡品种</p>
+              </div>
+              <span class="pill green">已完成</span>
+            </div>
+            <div class="cf-progress">
+              <div class="cf-bar">
+                <div class="cf-fill" style="width: 100%;">
+                </div>
+              </div>
+              <div class="cf-meta">
+                <span>¥380,000</span>
+                <span>目标 ¥380,000 · 100% </span>
+              </div>
+            </div>
+            <div class="cf-tags">
+              <span> 310 支持者</span>
+              <span> 已完成</span>
+              <span style="color: var(--green);"> +5,700 碳积分</span>
+            </div>
+          </div>
+          <div class="cf-card animate-in d4">
+            <div style="display: flex; justify-content: space-between; align-items: start;">
+              <div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 4px;">埃塞俄比亚·小农雾培转型计划</h4>
+                <p style="font-size: 0.85rem; color: var(--text-2);">帮助耶加雪菲产区20户小农转型雾化水培，预计年减排1,200 tCO₂e</p>
+              </div>
+              <span class="pill green">低碳认证</span>
+            </div>
+            <div class="cf-progress">
+              <div class="cf-bar">
+                <div class="cf-fill" style="width: 35%;">
+                </div>
+              </div>
+              <div class="cf-meta">
+                <span>¥87,500</span>
+                <span>目标 ¥250,000 · 35%</span>
+              </div>
+            </div>
+            <div class="cf-tags">
+              <span> 52 支持者</span>
+              <span>⏰ 剩余 28 天</span>
+              <span style="color: var(--green);"> +1,312 碳积分</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">核心功能</div>
+            <h2>六大能力</h2>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card animate-in d1">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>项目发起</h4>
+            <p>种植户/合作社发起雾培扩建、设备升级、加工厂建设等项目。</p>
+          </div>
+          <div class="feature-card animate-in d2">
+            <div class="feature-card-icon blue">
+            </div>
+            <h4>项目展示</h4>
+            <p>目标金额、众筹进度、回报方案（咖啡豆/碳积分/收益分成）透明展示。</p>
+          </div>
+          <div class="feature-card animate-in d3">
+            <div class="feature-card-icon amber">
+            </div>
+            <h4>在线认购</h4>
+            <p>多种认购档位，支持法币和碳积分支付，智能合约自动记录与分配。</p>
+          </div>
+          <div class="feature-card animate-in d4">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>进度追踪</h4>
+            <p>项目执行进展实时更新，资金使用透明可查，区块链记录关键里程碑。</p>
+          </div>
+          <div class="feature-card animate-in d5">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>碳积分机制</h4>
+            <p>支持者获得碳积分奖励，可用于购买产品、支持更多项目或碳抵消。</p>
+          </div>
+          <div class="feature-card animate-in d6">
+            <div class="feature-card-icon green">
+            </div>
+            <h4>低碳认证审核</h4>
+            <p>所有上线项目必须通过第三方低碳认证，确保资金真正用于绿色转型。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; justify-content: center;">
+          <p>&copy; 2026 JEBI HUB. 每一杯咖啡都有碳账本。</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js">
+    </script>
+  </body>
+</html>
