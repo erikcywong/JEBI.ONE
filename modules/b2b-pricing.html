@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-    <script src="../js/i18n.js?v=5"></script>
+    <script src="../js/i18n.js?v=6"></script>
+  
+    <script>document.addEventListener('click',function(){var s=document.querySelector('.lang-switcher');if(s)s.classList.remove('open')})</script>
   </head>
   <body>
     <!-- ========== Navigation ========== -->
@@ -65,7 +67,7 @@
           </div>
           <a href="../index.html#dashboard" class="nav-link" data-i18n="nav.carbon_data">碳数据</a>
           <div class="lang-switcher">
-            <button type="button" class="lang-switcher-btn">
+            <button type="button" class="lang-switcher-btn" onclick="this.parentElement.classList.toggle('open');event.stopPropagation()">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10"/>
                 <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
@@ -73,9 +75,9 @@
               <span class="lang-current">ZH</span>
             </button>
             <div class="lang-switcher-menu">
-              <div class="lang-option active" data-lang="zh">中文</div>
-              <div class="lang-option" data-lang="en">English</div>
-              <div class="lang-option" data-lang="ar">العربية</div>
+              <div class="lang-option active" data-lang="zh" onclick="JEBI_I18N.setLang('zh');this.parentElement.parentElement.classList.remove('open')">中文</div>
+              <div class="lang-option" data-lang="en" onclick="JEBI_I18N.setLang('en');this.parentElement.parentElement.classList.remove('open')">English</div>
+              <div class="lang-option" data-lang="ar" onclick="JEBI_I18N.setLang('ar');this.parentElement.parentElement.classList.remove('open')">العربية</div>
             </div>
           </div>
         </div>
@@ -723,7 +725,7 @@
             <span style="color: var(--green);">●</span> 平台运行状态：正常</p>
           </div>
         </div>
-      </footer><script src="../js/main.js?v=5">
+      </footer><script src="../js/main.js?v=6">
       </script>
     </body>
   </html>

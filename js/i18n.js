@@ -257,13 +257,10 @@ function applyI18n(lang) {
     // Sort by length descending so longer matches take priority
     chineseKeys.sort(function(a, b) { return b.length - a.length; });
 
-    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
-      acceptNode: function(n) {
-        // Skip script/style tags
-        var p = n.parentNode;
-        if (p && (p.tagName === 'SCRIPT' || p.tagName === 'STYLE')) return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      }
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, function(n) {
+      var p = n.parentNode;
+      if (p && (p.tagName === 'SCRIPT' || p.tagName === 'STYLE')) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
     }, false);
 
     var node;
@@ -296,42 +293,16 @@ function applyI18n(lang) {
 
 function initLangSwitcher() {
   try {
-    // --- Language switcher dropdown ---
-    document.querySelectorAll('.lang-switcher').forEach(switcher => {
-      const btn = switcher.querySelector('.lang-switcher-btn');
-      if (btn) {
-        btn.setAttribute('type', 'button');
-        btn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          switcher.classList.toggle('open');
-        });
-      }
-      // Close when clicking outside
-      document.addEventListener('click', function() {
-        switcher.classList.remove('open');
-      });
-      // Option clicks
-      switcher.querySelectorAll('.lang-option').forEach(function(opt) {
-        opt.addEventListener('click', function(e) {
-          e.stopPropagation();
-          var lang = opt.dataset.lang;
-          setLang(lang);
-          switcher.classList.remove('open');
-        });
-      });
-    });
-
-    // --- Apply saved language (modal is handled by inline script in index.html) ---
+    // Apply saved language translation
     var savedLang = getLang();
     applyI18n(savedLang);
 
-    // --- Update switcher display ---
-    var lang = getLang();
+    // Update switcher display
     document.querySelectorAll('.lang-current').forEach(function(el) {
-      el.textContent = lang.toUpperCase();
+      el.textContent = savedLang.toUpperCase();
     });
     document.querySelectorAll('.lang-option').forEach(function(el) {
-      el.classList.toggle('active', el.dataset.lang === lang);
+      el.classList.toggle('active', el.dataset.lang === savedLang);
     });
   } catch(err) {
     console.error('[JEBI i18n] initLangSwitcher error:', err);
