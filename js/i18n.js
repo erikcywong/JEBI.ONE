@@ -44,11 +44,11 @@ const I18N = {
   "hero.badge": { en: "World's first aeroponic · Full-chain carbon neutral · Blockchain traceability", zh: "全球首创雾化水培 · 全链路碳中和 · 区块链溯源", ar: "أول زراعة هوائية في العالم · سلسلة كربون محايدة · تتبع البلوكتشين" },
   "hero.title_1": { en: "From Aeroponic Seeds", zh: "从雾培种子", ar: "من بذور الزراعة الهوائية" },
   "hero.title_2": { en: "to Carbon-Neutral Cup", zh: "到碳中和杯子", ar: "إلى فنجان محايد الكربون" },
-  "hero.sub": { en: "The world's first low-carbon coffee industry platform covering the entire chain from seed to cup. Ten interconnected modules, three self-reinforcing flywheels — every cup has a carbon ledger.", zh: "全球首个覆盖"从种子到杯子"全链条的咖啡低碳产业互联网平台。十大模块环环双扣，三大飞轮自我强化——每一杯咖啡都有碳账本。", ar: "أول منصة صناعة قهوة منخفضة الكربون في العالم تغطي السلسلة الكاملة من البذرة إلى الفنجان. عشر وحدات مترابطة، ثلاث عجلات ذاتية التعزيز — كل فنجان له دفتر كربون." },
+  "hero.sub": { en: "The world's first low-carbon coffee industry platform covering the entire chain from seed to cup. Ten interconnected modules, three self-reinforcing flywheels — every cup has a carbon ledger.", zh: "全球首个覆盖从种子到杯子全链条的咖啡低碳产业互联网平台。十大模块环环双扣，三大飞轮自我强化——每一杯咖啡都有碳账本。", ar: "أول منصة صناعة قهوة منخفضة الكربون في العالم تغطي السلسلة الكاملة من البذرة إلى الفنجان. عشر وحدات مترابطة، ثلاث عجلات ذاتية التعزيز — كل فنجان له دفتر كربون." },
   "hero.cta_explore": { en: "Explore Ten Modules", zh: "探索十大模块", ar: "استكشف الوحدات العشر" },
   "hero.cta_dashboard": { en: "Carbon Data Dashboard", zh: "碳数据大屏", ar: "لوحة بيانات الكربون" },
   "hero.title_full": { en: "From Aeroponic Seeds to Carbon-Neutral Cup", zh: "从雾培种子到碳中和杯子", ar: "من بذور الزراعة الهوائية إلى فنجان محايد الكربون" },
-  "hero.sub_cn": { en: "China's first low-carbon coffee industry internet platform covering the entire chain from seed to cup. Eight interconnected modules, three self-reinforcing flywheels — every cup of coffee has a carbon ledger.", zh: "中国首个覆盖"从种子到杯子"全链条的咖啡低碳产业互联网平台。八大模块环环双扣，三大飞轮自我强化——每一杯咖啡都有碳账本。", ar: "أول منصة إنترنت صناعة قهوة منخفضة الكربون في الصين تغطي السلسلة الكاملة من البذرة إلى الفنجان. ثماني وحدات مترابطة، ثلاث عجلات ذاتية التعزيز — كل فنجان قهوة له دفتر كربون." },
+  "hero.sub_cn": { en: "China's first low-carbon coffee industry internet platform covering the entire chain from seed to cup. Eight interconnected modules, three self-reinforcing flywheels — every cup of coffee has a carbon ledger.", zh: "中国首个覆盖从种子到杯子全链条的咖啡低碳产业互联网平台。八大模块环环双扣，三大飞轮自我强化——每一杯咖啡都有碳账本。", ar: "أول منصة إنترنت صناعة قهوة منخفضة الكربون في الصين تغطي السلسلة الكاملة من البذرة إلى الفنجان. ثماني وحدات مترابطة، ثلاث عجلات ذاتية التعزيز — كل فنجان قهوة له دفتر كربون." },
 
   /* ---------- KPI Labels (index) ---------- */
   "kpi.carbon_reduction": { en: "Cumulative Carbon Reduction (tCO₂e)", zh: "累计碳减排 (tCO₂e)", ar: "إجمالي تخفيض الكربون (tCO₂e)" },
@@ -83,7 +83,7 @@ const I18N = {
   "btn.lock_price": { en: "Lock Price", zh: "锁价", ar: "قفل السعر" },
 
   /* ---------- Footer ---------- */
-  "footer.brand_desc": { en: "The world's first low-carbon coffee industry platform covering the entire chain from seed to cup. Built on aeroponic hydroponic technology, creating a low-carbon ecosystem for the entire coffee industry chain.", zh: "全球首个覆盖"从种子到杯子"全链条的咖啡低碳产业互联网平台。以雾化水培技术为起点，构建咖啡全产业链低碳生态圈。", ar: "أول منصة صناعة قهوة منخفضة الكربون في العالم تغطي السلسلة الكاملة من البذرة إلى الفنجان. مبنية على تقنية الزراعة الهوائية، خلق نظام بيئي منخفض الكربون للسلسلة الصناعية الكاملة للقهوة." },
+  "footer.brand_desc": { en: "The world's first low-carbon coffee industry platform covering the entire chain from seed to cup. Built on aeroponic hydroponic technology, creating a low-carbon ecosystem for the entire coffee industry chain.", zh: "全球首个覆盖从种子到杯子全链条的咖啡低碳产业互联网平台。以雾化水培技术为起点，构建咖啡全产业链低碳生态圈。", ar: "أول منصة صناعة قهوة منخفضة الكربون في العالم تغطي السلسلة الكاملة من البذرة إلى الفنجان. مبنية على تقنية الزراعة الهوائية، خلق نظام بيئي منخفض الكربون للسلسلة الصناعية الكاملة للقهوة." },
   "footer.industry_chain": { en: "Industry Chain", zh: "产业链", ar: "سلسلة الصناعة" },
   "footer.carbon_economy": { en: "Carbon Economy", zh: "碳经济", ar: "اقتصاد الكربون" },
   "footer.private_bank": { en: "Private Central Bank", zh: "私人央行", ar: "البنك المركزي الخاص" },
@@ -142,7 +142,7 @@ const I18N = {
 
   /* ---------- About Page ---------- */
   "about.title": { en: "About JEBI ONE", zh: "关于我们", ar: "من نحن" },
-  "about.desc": { en: "JEBI ONE is the world's first low-carbon coffee industry platform covering the entire chain from seed to cup, built on aeroponic hydroponic technology.", zh: "JEBI ONE 是全球首个覆盖"从种子到杯子"全链条的咖啡低碳产业互联网平台，以雾化水培技术为起点。", ar: "JEBI ONE هي أول منصة صناعة قهوة منخفضة الكربون في العالم تغطي السلسلة الكاملة من البذرة إلى الفنجان، مبنية على تقنية الزراعة الهوائية." },
+  "about.desc": { en: "JEBI ONE is the world's first low-carbon coffee industry platform covering the entire chain from seed to cup, built on aeroponic hydroponic technology.", zh: "JEBI ONE 是全球首个覆盖从种子到杯子全链条的咖啡低碳产业互联网平台，以雾化水培技术为起点。", ar: "JEBI ONE هي أول منصة صناعة قهوة منخفضة الكربون في العالم تغطي السلسلة الكاملة من البذرة إلى الفنجان، مبنية على تقنية الزراعة الهوائية." },
 
   /* ---------- Methodology Page ---------- */
   "methodology.title": { en: "Carbon Accounting Methodology", zh: "碳核算方法论", ar: "منهجية حساب الكربون" },
@@ -155,7 +155,7 @@ const I18N = {
   /* ---------- B2B Page ---------- */
   "b2b.title": { en: "B2B Dynamic Pricing Platform", zh: "B2B 动态定价平台", ar: "منصة التسعير الديناميكي بين الشركات" },
   "b2b.subtitle": { en: "Trade & Supply Chain Skeleton", zh: "贸易与供应链的骨架", ar: "هيكل التجارة وسلسلة التوريد" },
-  "b2b.desc": { en: "Leveraging 30% of global aeroponic coffee capacity, productizing 'supply chain as a service'. Real-time inventory, production forecasts, growth cycle data drive the smart pricing engine, guaranteeing 'supply certainty' to downstream clients, converting data advantage directly into stable cash flow and spot positions.", zh: "依托全球 30% 水培咖啡产能，将"供应链即服务"产品化。实时库存、产量预测、生长周期数据驱动智能定价引擎，向下游大客户承诺"供应确定性"，将数据优势直接转化为稳定现金流与现货头寸。", ar: "بالاعتماد على 30% من سعة الزراعة الهوائية العالمية للقهوة، تحويل "سلسلة التوريد كخدمة" إلى منتج. المخزون في الوقت الفعلي، توقعات الإنتاج، بيانات دورة النمو تدفع محرك التسعير الذكي، ضمان "يقين التوريد" للعملاء، تحويل ميزة البيانات إلى تدفق نقدي مستقر ومراكز نقدية." },
+  "b2b.desc": { en: "Leveraging 30% of global aeroponic coffee capacity, productizing 'supply chain as a service'. Real-time inventory, production forecasts, growth cycle data drive the smart pricing engine, guaranteeing 'supply certainty' to downstream clients, converting data advantage directly into stable cash flow and spot positions.", zh: "依托全球 30% 水培咖啡产能，将供应链即服务产品化。实时库存、产量预测、生长周期数据驱动智能定价引擎，向下游大客户承诺供应确定性，将数据优势直接转化为稳定现金流与现货头寸。", ar: "بالاعتماد على 30% من سعة الزراعة الهوائية العالمية للقهوة، تحويل سلسلة التوريد كخدمة إلى منتج. المخزون في الوقت الفعلي، توقعات الإنتاج، بيانات دورة النمو تدفع محرك التسعير الذكي، ضمان يقين التوريد للعملاء، تحويل ميزة البيانات إلى تدفق نقدي مستقر ومراكز نقدية." },
 
   /* ---------- RWA Page ---------- */
   "rwa.title": { en: "RWA & Stablecoin Platform", zh: "RWA 与稳定币平台", ar: "منصة الأصول الحقيقية والعملة المستقرة" },
